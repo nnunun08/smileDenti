@@ -1,0 +1,33 @@
+.checkbox input {
+    display: none;
+}
+.checkbox .checkItem {
+    width: 26px;
+    height: 26px;
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF !important;
+    border-color: #CFCFCF !important;
+    border-radius: 4px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.checkbox input:checked + .checkItem {
+    background: #fff url(../../../public/img/ico_check.svg) center no-repeat;
+}
+
+.checkbox.small {
+    .checkItem {
+        width: 22px;
+        height: 22px;
+        box-sizing: border-box;
+    }
+    input:checked + .checkItem {
+        background-size: 16px 12px;
+    }
+}
+.checkbox.fill {
+    input:checked + .checkItem {
+        background: #0275B5 url(../../../public/img/ico_check_w.svg) center no-repeat;
+        border: 0 !important;
+    }
+}

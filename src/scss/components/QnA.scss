@@ -1,0 +1,61 @@
+.qna_2 {
+    margin: 0 23px 0 14px;
+    padding: 20px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.qna_2::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.qna_2 li {
+    list-style: none;
+}
+.qna_2 .num {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: -0.3px;
+    color: #177ABD;
+}
+.qna_2 .tit {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.qna_2 .answer {
+    float: right;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #222222;
+    position: relative;
+}
+.qna_2 .answer::before{
+    content: '';
+    position: absolute;
+    left: -23px;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.qna_2 .answer.g {
+    color: #33BE1D;
+}
+.qna_2 .answer.y {
+    color: #FFA41D;
+}
+.qna_2 .answer.r {
+    color: #FF3C30;
+}
+.qna_2 .answer.g::before {
+    background-color: #33BE1D;
+}
+.qna_2 .answer.y::before {
+    background-color: #FFA41D;
+}
+.qna_2 .answer.r::before {
+    background-color: #FF3C30;
+}

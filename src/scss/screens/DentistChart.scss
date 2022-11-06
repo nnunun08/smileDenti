@@ -1,0 +1,1072 @@
+.DentistChart {
+    background-color: #F7F8FC;
+    display: flex;
+}
+
+.DentistChart .card {
+    background: #FFFFFF;
+    border: 1px solid #D9DDE9;
+    box-shadow: 0px 0px 8px rgba(178, 185, 216, 0.5);
+    border-radius: 10px;
+}
+
+.DentistChart .row+.row {
+    margin-top: 20px;
+}
+
+.DentistChart .leftInfo {
+    padding: 50px 22px 50px 60px;
+    width: 352px;
+    box-sizing: content-box;
+    border-right: 1px solid #D9DDE9;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.DentistChart.fullPage .leftInfo {
+    margin-left: -435px;
+}
+
+.DentistChart h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.1px;
+    color: #222222;
+}
+
+.DentistChart .leftInfo .tableWrap {
+    overflow: hidden;
+    min-height: fit-content;
+    min-width: fit-content;
+    height: auto;
+}
+
+.DentistChart .leftInfo table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.DentistChart .leftInfo table th {
+    width: 115px;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    border-bottom: 1px solid #DDD;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #222222;
+    text-align: left;
+    padding: 14px 15px;
+}
+
+.DentistChart .leftInfo table td {
+    background-color: white;
+    border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #222222;
+    text-align: left;
+    padding: 14px 15px;
+}
+
+.DentistChart .leftInfo table tr:last-child th,
+.DentistChart .leftInfo table tr:last-child td {
+    border-bottom: 0;
+}
+
+.DentistChart .leftInfo .conWrap .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 7px 8px 5px;
+    border-bottom: 1px solid #CFCFCF;
+    margin: 0 12px;
+}
+
+.DentistChart .leftInfo .conWrap .top ul {
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fafafa;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li.g {
+    color: #33BE1D;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li.y {
+    color: #FFA41D;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li.r {
+    color: #FF3C30;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li.g::before {
+    background-color: #33BE1D;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li.y::before {
+    background-color: #FFA41D;
+}
+
+.DentistChart .leftInfo .conWrap .top ul li.r::before {
+    background-color: #FF3C30;
+}
+
+
+.DentistChart .leftInfo .conWrap .body {
+    height: 860px;
+    overflow: auto;
+}
+
+.DentistChart .leftInfo .etcMesg {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.DentistChart .leftInfo .etcMesg .top {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 15px 12px;
+    gap: 10px;
+    background: #EBF7FF;
+}
+
+.DentistChart .leftInfo .etcMesg .img {
+    width: 18px;
+    height: 18px;
+    background: url(../../../public/img/writingHand.png) center/cover no-repeat;
+}
+
+.DentistChart .leftInfo .etcMesg .top p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: -0.3px;
+    color: #176DBD;
+}
+
+.DentistChart .leftInfo .etcMesg .body {
+    margin: 12px;
+    padding: 10px;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    height: 262px;
+    overflow-y: auto;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: -0.3px;
+}
+
+.DentistChart .rightCon {
+    padding: 50px 60px 50px 40px;
+    flex: 1 0 0;
+    position: relative;
+}
+
+.DentistChart.fullPage .rightCon {
+    padding-left: 60px;
+}
+
+.DentistChart .rightCon .sideTab {
+    display: block;
+    position: absolute;
+    position: fixed;
+    left: 0;
+    left: 435px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 86px;
+    background: url(../../../public/img/sideTab.svg) no-repeat;
+    transition: 0.3s;
+}
+
+.DentistChart .userInfo {
+    display: none;
+}
+
+.DentistChart.fullPage .userInfo {
+    display: block;
+    float: right;
+    border: 2px solid #CFCFCF;
+    border-radius: 50px;
+    margin-top: -60px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    color: #222222;
+    text-align: center;
+    padding: 10px 12px;
+    span:nth-child(1) {
+        padding-left: 44px;
+        background: url(../../../public/img/member.svg) left 10px center no-repeat;
+    }
+}
+
+.DentistChart.fullPage .userInfo span {
+    padding: 0 22px;
+    line-height: 25px;
+}
+
+.DentistChart.fullPage .userInfo span:nth-child(2) {
+    border-left: 1px solid #CFCFCF;
+    border-right: 1px solid #CFCFCF;
+}
+
+.DentistChart.fullPage .rightCon .sideTab {
+    left: 0;
+    background: url(../../../public/img/sideTab_ac.svg) no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap {
+    padding: 20px;
+}
+
+.DentistChart .rightCon .resultWrap .row+.row {
+    margin-top: 12px;
+}
+
+.DentistChart .rightCon .resultWrap .card2 {
+    background: #FFFFFF;
+    border: 2px solid #CFCFCF;
+    box-shadow: 0px 0px 10px rgba(178, 185, 216, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.DentistChart .rightCon .resultWrap .card2.ac {
+    border: 2px solid #FF5100;
+    box-shadow: 0px 0px 20px #FF5100;
+}
+
+.DentistChart .rightCon .resultWrap table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.DentistChart .rightCon .resultWrap td {
+    border: 0;
+    border-color: #666666;
+    border-style: solid;
+    padding: 14px;
+}
+
+.DentistChart .rightCon .resultWrap td>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DentistChart .rightCon .resultWrap td.toothLT {
+    border-width: 0 1px 1px 0;
+    padding: 0 9px 14px 0;
+}
+
+.DentistChart .rightCon .resultWrap td.toothRT {
+    border-width: 0 0 1px 1px;
+    padding: 0 0 14px 9px;
+}
+
+.DentistChart .rightCon .resultWrap td.toothLB {
+    border-width: 1px 1px 0 0;
+    padding: 14px 9px 0 0;
+}
+
+.DentistChart .rightCon .resultWrap td.toothRB {
+    border-width: 1px 0 0 1px;
+    padding: 14px 0 0 9px;
+}
+
+.DentistChart .rightCon .resultWrap .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn-tooth {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 5px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #999999;
+}
+
+.btn-tooth i {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-tooth.ac {
+    background: #F8F8F8;
+    font-weight: 700;
+    color: #222222;
+}
+
+.btn-tooth.btn-tooth01 i {
+    background: url(../../../public/img/btn-tooth01.svg) center no-repeat;
+}
+
+.btn-tooth.btn-tooth02 i {
+    background: url(../../../public/img/btn-tooth02.svg) center no-repeat;
+}
+
+.btn-tooth.btn-tooth03 i {
+    background: url(../../../public/img/btn-tooth03.svg) center no-repeat;
+}
+
+.btn-tooth.btn-tooth04 i {
+    background: url(../../../public/img/btn-tooth04.svg) center no-repeat;
+}
+
+.btn-tooth.btn-tooth01.ac i {
+    background: url(../../../public/img/btn-tooth01ac.svg) center no-repeat;
+}
+
+.btn-tooth.btn-tooth02.ac i {
+    background: url(../../../public/img/btn-tooth02ac.svg) center no-repeat;
+}
+
+.btn-tooth.btn-tooth03.ac i {
+    background: url(../../../public/img/btn-tooth03ac.svg) center no-repeat;
+}
+.btn-tooth.btn-tooth04.ac i {
+    background: url(../../../public/img/btn-tooth04ac.svg) center no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap {
+    padding: 18px 14px;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap+.radioWrap {
+    border-top: 1px solid #F2F4F6;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CFCFCF;
+    padding-bottom: 12.75px;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .top>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .top i {
+    width: 38px;
+    height: 38px;
+    display: block;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .top h3 {
+    margin-right: 7px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #176DBD;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap02 .top h3 {
+    color: #009ABF;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .top span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.3px;
+    color: #666666;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .top em {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.3px;
+    color: #666666;
+    position: relative;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .top em::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -9px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap.radioWrap01 .top i {
+    background: url(../../../public/img/ic_tooth1.svg) center no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap.radioWrap02 .top i {
+    background: url(../../../public/img/ic_tooth2.svg) center no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body {
+    margin-top: 12px;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #222222;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body li+li {
+    margin-top: 12px;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body li>div {
+    display: flex;
+    gap: 10px;
+    width: 60%;
+
+    >div {
+        flex: 1 0 auto;
+    }
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body .btnRadio {
+    width: 110px;
+    height: 44px;
+    border: 1px solid #999999;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #999999;
+    box-sizing: border-box;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body .btnRadio.on {
+    font-weight: 700;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap01 .body .btnRadio.on {
+    background: #F2FAFF;
+    color: #0275B5;
+    border: 1px solid #0275B5;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap02 .body .btnRadio.on {
+    background: #F2FEFF;
+    color: #009ABF;
+    border: 1px solid #009ABF;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body .counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 140px;
+    height: 44px;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #0275B5;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body .counter span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body .counter .num {
+    border-left: 1px solid #CFCFCF;
+    border-right: 1px solid #CFCFCF;
+    min-width: 60px;
+    flex: 1 0 auto;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body .counter .minus {
+    height: 100%;
+    background: url(../../../public/img/ic_minus.svg) center no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap .radioWrap .body .counter .plus {
+    height: 100%;
+    background: url(../../../public/img/ic_pluc.svg) center no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap .card2.feedback .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8px;
+    padding-bottom: 8.5px;
+    border-bottom: 1px solid #CFCFCF;
+    margin-bottom: 15px;
+}
+
+.DentistChart .rightCon .resultWrap .card2.feedback .left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.DentistChart .rightCon .resultWrap .card2.feedback .left i {
+    width: 20px;
+    height: 24px;
+    background: url(../../../public/img/ic_etcMesg.svg) no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap .card2.feedback .left h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.DentistChart .rightCon .resultWrap .card2.feedback .left span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+}
+
+.DentistChart .rightCon .resultWrap .card2.feedback .left .plus {
+    width: 17px;
+    height: 17px;
+    background: url(../../../public/img/ic_mesgAdd.svg) no-repeat;
+    margin-left: 5px;
+}
+
+.DentistChart .rightCon .resultWrap .card2.feedback .mesgField {
+    width: 100%;
+    height: 63px;
+    border: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    overflow: auto;
+}
+
+.DentistChart .rightCon .resultWrap .score {
+    padding-top: 10px;
+}
+
+.DentistChart .rightCon .resultWrap .score p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #606782;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.DentistChart .rightCon .resultWrap .score .card {
+    background: #EFF5FB;
+    border: 1px solid #D9DDE9;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 20px;
+    min-height: 370px;
+}
+
+.DentistChart .rightCon .resultWrap .score .top {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-bottom: 1px solid #B4BBD3;
+    padding-bottom: 10px;
+    color: #222;
+}
+
+.DentistChart .rightCon .resultWrap .score .top h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.DentistChart .rightCon .resultWrap .score .top span {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body {
+    position: relative;
+    padding-right: 250px;
+    margin-top: 23px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left {
+    margin-right: 20px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #222222;
+    gap: 16px;
+    padding: 0 10px 0 4px;
+    &.ave {
+        .value {
+            font-weight: 700;
+        }
+    }
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left li+li {
+    margin-top: 13px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left li .num {
+    width: auto;
+    height: 24px;
+    padding: 3px 7px;
+    background: #CCE1F5;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #303E6C;
+    margin: 0 5px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left li .value {
+    width: 75px;
+    height: 33px;
+    line-height: 33px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-align: right;
+    padding-right: 11px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left li .value+span {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left li.ave {
+    border-radius: 4px;
+    background: #D3E0EF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 11px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .left li.ave .tit {
+    flex: 1 0 auto;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    text-align: center;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background: #FFFFFF;
+    border: 2px solid #B4BBD3;
+    border-radius: 10px;
+    padding: 17px 20px;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right .h5 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #535B78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #B4BBD3;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right .h5::before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    background: url(../../../public/img/speedometer.png) center no-repeat;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right ul li {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170%;
+    color: #606782;
+    list-style: disc;
+    padding-left: 5px;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right .table {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #B4BBD3;
+    overflow: hidden;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right .table div:nth-child(1) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 34px;
+    color: #606782;
+    background: #D3E0EF;
+}
+
+.DentistChart .rightCon .resultWrap .score .body .right .table div:nth-child(2) {
+    flex: 1 0 auto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    color: #606782;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 54px;
+}
+
+
+.DentistChart .rightCon .report {
+    padding-left: 248px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #62ACF0;
+    margin-top: 20px;
+}
+
+.DentistChart .rightCon .report .left {
+    width: 248px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EEF8FF;
+    overflow: hidden;
+}
+
+.DentistChart .rightCon .report .left::before {
+    content: '';
+    position: absolute;
+    top: -137px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 322px;
+    height: 248px;
+    border-radius: 50%;
+    background: rgba(2, 117, 181, 0.1);
+}
+
+.DentistChart .rightCon .report .left i {
+    display: block;
+    margin: 0 auto;
+    margin-top: 46px;
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3) url(../../../public/img/ic_chart.png) center no-repeat;
+}
+
+.DentistChart .rightCon .report .left h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #222222;
+    margin: -4px auto 30px;
+}
+
+.DentistChart .rightCon .report .left h3 b {
+    color: #0275B5;
+}
+
+.DentistChart .rightCon .report .left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.DentistChart .rightCon .report .left li {
+    width: 198px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #A7D1E9;
+    border-radius: 8px;
+}
+
+.DentistChart .rightCon .report .left li.ac {
+    background-color: #0275B5;
+    font-weight: 700;
+}
+
+.DentistChart .rightCon .report .right {
+    padding: 18px 20px;
+}
+
+.DentistChart .rightCon .report .right h5 {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    color: #222222;
+}
+
+.DentistChart .rightCon .report .right ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.DentistChart .rightCon .report .right ul:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.DentistChart .rightCon .report .right .btnSel {
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    padding: 10px 14px;
+    height: auto;
+    line-height: 1;
+    font-weight: 500;
+    box-sizing: border-box;
+    flex: 1 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    flex: 0 0 auto;
+    width: calc((100% - 10px) /2);
+    gap: 3px;
+}
+
+.DentistChart .rightCon .report .right .btnSel::after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../../../public/img/ic_btnSel.svg) no-repeat;
+    flex: 0 0 auto;
+}
+
+.DentistChart .rightCon .report .right .btnSel.ac {
+    color: #0275B5;
+    border-color: #0275B5;
+    font-weight: 700;
+}
+
+.DentistChart .rightCon .report .right .btnSel.ac::after {
+    background: url(../../../public/img/ic_btnSel_ac.svg) no-repeat;
+}
+
+.btnWrap {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tabletBtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 130px;
+    height: 46px;
+    line-height: 1;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #222222;
+    box-sizing: border-box;
+    margin: 0 6px;
+}
+
+.tabletBtn.ac {
+    background: #0275B5;
+    border-color: #0275B5;
+    color: white;
+}
+
+.tabletBtn.dis {
+    background: #EEEEEE;
+    border-color: transparent;
+    color: #666;
+}
+
+.tabletBtn.tabletBtn38 {
+    font-size: 15px;
+    width: 100px;
+    height: 38px;
+    margin: 0 5px;
+}
+
+.dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 998;
+}
+.modal {
+    display: none;
+}
+.modal.ac {
+    display: block;
+}
+.DentistChart .popup {
+    width: 500px;
+    padding: 30px 24px 20px;
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    .top {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #CFCFCF;
+        text-align: left;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 23px;
+        color: #333333;
+        display: inline;
+        margin-right: 10px;
+    }
+
+    p {
+        display: inline;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        color: #666666;
+    }
+
+    ul {
+        padding: 0 10px;
+        margin: 10px 0;
+        height: 274px;
+        overflow: auto;
+        li {
+            text-align: left;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            padding: 14px 0;
+            border-bottom: 1px solid #EEEEEE;
+            background: url(../../../public/img/pop_check_df.svg) right center no-repeat;
+            &.ac {
+                background: url(../../../public/img/pop_check_ac.svg) right center no-repeat;
+            }
+        }
+    }
+}

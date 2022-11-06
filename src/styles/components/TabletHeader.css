@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: #666666;
+  background-color: white;
+}
+.header svg {
+  width: 156px;
+  height: 39px;
+}
+.header .name {
+  font-weight: 600;
+}
+.header .portal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 22px 0 44px;
+  height: 34px;
+  color: #FF5100;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  background: url(../../../public/img/home.svg) 22px center no-repeat;
+  border: 2px solid #FFD4C0;
+  border-radius: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.header .portal.home {
+  display: flex;
+}
+.header .flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .flex ul {
+  display: none;
+  align-items: center;
+  gap: 24px;
+}
+.header .flex ul.menu {
+  display: flex;
+}
+.header .flex ul a {
+  text-decoration: none;
+}
+.header .flex ul a.ac li {
+  color: #0275B5;
+}
+.header .flex ul li {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #222222;
+}
+.header .left {
+  gap: 48px;
+}
+
+/*# sourceMappingURL=TabletHeader.css.map */

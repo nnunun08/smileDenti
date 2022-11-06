@@ -1,0 +1,152 @@
+.dentiWaitngWrap {
+    padding: 48px 60px 74px;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+}
+
+.dentiWaitngWrap .tableTit {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 19px;
+}
+
+.dentiWaitngWrap .conWrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    height: calc(100% - 40px);
+}
+.dentiWaitngWrap .tableWrap {
+    flex: 0 0 50%;
+    height: 100%;
+    position: relative;
+    max-width: 700px;
+    min-width: 570px;
+}
+.dentiWaitngWrap .tableHead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.dentiWaitngWrap .tableBody {
+    padding-top: 50px;
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+.dentiWaitngWrap .tableWrap table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+.dentiWaitngWrap .tableWrap table th {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #777777; 
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #CFCFCF;
+    padding: 15px;
+}
+.dentiWaitngWrap .tableWrap table th + th {
+    border-left: 1px solid #EAEAEA;
+}
+.dentiWaitngWrap .tableWrap table td {
+    border-bottom: 1px solid #CFCFCF;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #222222;
+}
+.dentiWaitngWrap .tableWrap table td + td {
+    border-left: 1px solid #EEE;
+}
+.dentiWaitngWrap .tableWrap table td.status {
+    color: #999999;
+    font-weight: 600;
+}
+.dentiWaitngWrap .tableWrap table td.status.on {
+    color: #0275B5;
+}
+.dentiWaitngWrap .controlPanel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    .tit {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+}
+.dentiWaitngWrap .controlPanel > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 40px;
+    border-radius: 20px;
+}
+.dentiWaitngWrap .controlPanel h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 0;
+}
+.dentiWaitngWrap .controlPanel .count {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+}
+.dentiWaitngWrap .controlPanel .count b {
+    font-size: 50px;
+}
+.dentiWaitngWrap .controlPanel .wait {
+    border: 2px solid #0275B5;
+    color: #0275B5;
+    .count {
+        color: #333;
+    }
+    .count b {
+        color: #0275B5;
+    }
+    i {
+        width: 48px;
+        height: 48px;
+        background: url(../../../public/img/waiting.svg);
+    }
+}
+
+
+.dentiWaitngWrap .controlPanel .complet {
+    border: 2px solid #999999;
+    background-color: #F8F8F8;
+    color: #999999;
+    margin-top: 12px;
+    i {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background: url(../../../public/img/sucess.svg);
+    }
+}
+.dentiWaitngWrap .controlPanel .complet h2,
+.dentiWaitngWrap .controlPanel .complet .count,
+.dentiWaitngWrap .controlPanel .complet .count b {
+    font-weight: 500;
+}
+.dentiWaitngWrap .controlPanel .btn-start {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 100%;
+    color: #fff;
+    background: #0275B5;
+    border-radius: 20px;
+    border: 0;
+    flex: 1 0 auto;
+    margin-top: 38px;
+}

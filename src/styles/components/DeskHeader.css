@@ -1,0 +1,76 @@
+.headerDesk {
+  padding: 20px 0;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: #666666;
+  background-color: white;
+}
+.headerDesk svg {
+  width: 156px;
+  height: 39px;
+}
+.headerDesk .name {
+  font-weight: 600;
+}
+.headerDesk .portal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 22px 0 44px;
+  height: 34px;
+  color: #FF5100;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  background: url(../../../public/img/home.svg) 22px center no-repeat;
+  border: 2px solid #FFD4C0;
+  border-radius: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.headerDesk .portal.home {
+  display: flex;
+}
+.headerDesk .flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.headerDesk .flex ul {
+  display: none;
+  align-items: center;
+  gap: 24px;
+}
+.headerDesk .flex ul.menu {
+  display: flex;
+}
+.headerDesk .flex ul a {
+  text-decoration: none;
+}
+.headerDesk .flex ul a.ac li {
+  color: #0275B5;
+}
+.headerDesk .flex ul li {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #222222;
+}
+.headerDesk .left {
+  gap: 48px;
+}
+.headerDesk .inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1062px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+/*# sourceMappingURL=DeskHeader.css.map */

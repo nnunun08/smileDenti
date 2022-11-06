@@ -1,0 +1,933 @@
+.DeskPrint01 {
+  margin: 76px auto 36px;
+  width: 1000px;
+}
+.DeskPrint01 h1 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.DeskPrint01 .printTable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid #BEBEBE;
+}
+.DeskPrint01 .printTable th {
+  height: 34px;
+  box-sizing: border-box;
+  background: #F8F8F8;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  border: 1px solid #DDD;
+  text-align: center;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.DeskPrint01 .printTable td {
+  height: 34px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #DDD;
+  text-align: left;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.DeskPrint01 .printTable th:first-child,
+.DeskPrint01 .printTable td:first-child {
+  border-left: 0;
+}
+.DeskPrint01 .printTable th:last-child,
+.DeskPrint01 .printTable td:last-child {
+  border-right: 0;
+}
+.DeskPrint01 .printTable .checkBoxWrap {
+  display: inline-flex;
+  gap: 7px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #222222;
+  margin-top: 5px;
+  margin-right: 40px;
+}
+.DeskPrint01 .bodyCon {
+  display: flex;
+  gap: 120px;
+  margin-top: 38px;
+}
+.DeskPrint01 .bodyCon .leftWrap {
+  flex: 1 0 0;
+}
+.DeskPrint01 .bodyCon .rightWrap {
+  flex: 1 0 0;
+  margin-top: 44px;
+}
+.DeskPrint01 .bodyCon ul {
+  padding: 35px 20px 29px;
+}
+.DeskPrint01 .bodyCon ul .radioWrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.DeskPrint01 .bodyCon ul .radioWrap label {
+  width: 90px;
+  margin-right: 30px;
+}
+.DeskPrint01 .bodyCon ul .radioWrap.col-2 label {
+  flex: 1 0 48%;
+  margin-right: 0;
+}
+.DeskPrint01 .bodyCon .part {
+  padding: 13px 10px;
+  background: #F7F8FC;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+  color: #616161;
+}
+.DeskPrint01 .bodyCon li .part {
+  margin-top: 68px;
+}
+.DeskPrint01 .bodyCon li + li {
+  margin-top: 35px;
+}
+.DeskPrint01 .freeMsg {
+  width: 100%;
+  margin-top: 28px;
+}
+.DeskPrint01 .freeMsg p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.3px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+.DeskPrint01 .freeMsg .field {
+  width: 100%;
+  border: 2px solid #FFC700;
+  height: 152px;
+}
+
+.DeskPrint02 {
+  margin: 57px auto 21px;
+  width: 1000px;
+}
+.DeskPrint02 .printTable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid #BEBEBE;
+}
+.DeskPrint02 .printTable th {
+  height: 34px;
+  box-sizing: border-box;
+  background: #F8F8F8;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  border: 1px solid #DDD;
+  text-align: center;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.DeskPrint02 .printTable td {
+  height: 34px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #DDD;
+  text-align: left;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.DeskPrint02 .printTable th:first-child,
+.DeskPrint02 .printTable td:first-child {
+  border-left: 0;
+}
+.DeskPrint02 .printTable th:last-child,
+.DeskPrint02 .printTable td:last-child {
+  border-right: 0;
+}
+.DeskPrint02 .printTable .checkBoxWrap {
+  display: inline-flex;
+  gap: 7px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #222222;
+  margin-top: 5px;
+  margin-right: 40px;
+}
+.DeskPrint02 .printTable {
+  margin-bottom: 20px;
+}
+.DeskPrint02 .printTable td,
+.DeskPrint02 .printTable th {
+  white-space: nowrap;
+  height: 50px;
+}
+.DeskPrint02 .printTable .checkBoxWrap {
+  display: inline-flex;
+  margin-right: 8px;
+}
+.DeskPrint02 h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.DeskPrint02 .printCard {
+  margin-bottom: 20px;
+  border: 1px solid #8AB5D1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.DeskPrint02 .printCard .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  background: #F7F8FC;
+  border-bottom: 2px solid #94B7CE;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.DeskPrint02 .printCard .head h2 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 34px;
+  padding-left: 39px;
+  background: left center/34px no-repeat;
+  background-image: url(../../../public/img/result1.svg);
+}
+.DeskPrint02 .printCard .head > div {
+  display: flex;
+  gap: 14px;
+}
+.DeskPrint02 .printCard .head label {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: #222;
+}
+.DeskPrint02 .printCard .head input:checked + label {
+  color: #0275B5;
+  font-weight: 700;
+}
+.DeskPrint02 .printCard .body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.DeskPrint02 .printCard .body .tit {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  padding-left: 16px;
+  position: relative;
+  margin: 5px 0;
+}
+.DeskPrint02 .printCard .body .tit::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #222;
+}
+.DeskPrint02 .printCard .body .tit b {
+  font-size: 19px;
+  font-weight: 700;
+}
+.DeskPrint02 .printCard .body .contents {
+  height: 65px;
+}
+.DeskPrint02 .printCard2 .head h2 {
+  background-image: url(../../../public/img/result2.svg);
+}
+.DeskPrint02 .printCard2 .top {
+  display: flex;
+  gap: 10px;
+}
+.DeskPrint02 .printCard2 .top .printTable {
+  margin: 0;
+}
+.DeskPrint02 .printCard2 .top .printTable th {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+}
+.DeskPrint02 .printCard2 .top .printTable th,
+.DeskPrint02 .printCard2 .top .printTable td {
+  height: 42px;
+}
+.DeskPrint02 .printCard2 .top .group {
+  display: inline-flex;
+  align-items: center;
+}
+.DeskPrint02 .printCard2 .top .group .groupTit {
+  width: 76px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+.DeskPrint02 .printCard2 .top .group .radioWrap {
+  display: flex;
+  align-items: center;
+}
+.DeskPrint02 .printCard2 .top .group:nth-of-type(2n) {
+  margin-left: 50px;
+}
+.DeskPrint02 .printCard2 .top .group:nth-of-type(3), .DeskPrint02 .printCard2 .top .group:nth-of-type(4) {
+  margin-top: 6px;
+}
+.DeskPrint02 .printCard2 .middle {
+  border: 2px solid #EEEEEE;
+  position: relative;
+  padding: 10px;
+}
+.DeskPrint02 .printCard2 .middle .toothBg {
+  width: 100%;
+  height: 277px;
+  background: url(../../../public/img/toothBg.svg) center/contain no-repeat;
+}
+.DeskPrint02 .printCard2 .middle table {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  table-layout: fixed;
+  width: 860px;
+  height: 246px;
+  margin: 0 auto;
+}
+.DeskPrint02 .printCard2 .middle table td > div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.DeskPrint02 .printCard2 .middle table tr:nth-child(1) td > div {
+  margin-bottom: 24px;
+}
+.DeskPrint02 .printCard2 .middle table tr:nth-child(2) td > div {
+  margin-top: 36px;
+}
+.DeskPrint02 .printCard2 .middle table td:nth-child(2) > div {
+  margin-left: 8px;
+}
+.DeskPrint02 .printCard2 .middle table .tooth {
+  border: 0;
+  height: 87px;
+  margin: 0 5px;
+  flex: 1 0 0;
+  width: auto;
+}
+.DeskPrint02 .printCard2 .middle table .tooth .too3-img::before {
+  width: 12px;
+  height: 69px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.DeskPrint02 .printCard2 .middle .bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.DeskPrint02 .printCard2 .middle2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.DeskPrint02 .printCard2 .middle2 .item {
+  display: flex;
+  background-color: #F0F4F8;
+  border-radius: 8px;
+  position: relative;
+  padding: 12px;
+  padding-left: 156px;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+}
+.DeskPrint02 .printCard2 .middle2 .item .category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 100%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 2px solid #9AB2C2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.DeskPrint02 .printCard2 .middle2 .item .category h3 {
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 23px;
+  color: #355368;
+  margin-bottom: 6px;
+}
+.DeskPrint02 .printCard2 .middle2 .item .category span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.3px;
+  color: #355368;
+}
+.DeskPrint02 .printCard2 .middle2 .item .cont ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.DeskPrint02 .printCard2 .middle2 .item .cont li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.DeskPrint02 .printCard2 .middle2 .item .cont li h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.2px;
+  width: 131px;
+  flex: 1 0 131px;
+}
+.DeskPrint02 .printCard2 .middle2 .item .cont li .radioWrap {
+  flex: 0 0 auto;
+  gap: 20px;
+  flex-direction: row;
+}
+.DeskPrint02 .printCard2 .middle2 .item .cont li .radioWrap label {
+  margin: 0;
+}
+.DeskPrint02 .printCard2 .middle2 .item .cont li .inputBx input {
+  flex: 0 0 auto;
+  width: 50px;
+}
+.DeskPrint02 .printCard2 .middle2 .item1 {
+  width: 550px;
+}
+.DeskPrint02 .printCard2 .middle2 .item2 {
+  width: 400px;
+}
+.DeskPrint02 .printCard2 .middle2 .item2 .cont h5 {
+  margin-bottom: 7px;
+}
+.DeskPrint02 .printCard2 .middle2 .item2 .cont .radioWrap {
+  margin-bottom: 10px;
+}
+.DeskPrint02 .printCard2 .middle2 .item3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  min-height: 80px;
+  width: 100%;
+}
+.DeskPrint02 .printCard2 .middle2 .item3 .cont {
+  width: 100%;
+}
+.DeskPrint02 .printCard2 .middle2 .item3 .field {
+  width: 100%;
+  height: 100%;
+  padding: 10px 14px;
+  background: #FFFFFF;
+  border: 1px solid #CAD0D7;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #666666;
+}
+.DeskPrint02 .printCard2 .middle2 .item4 {
+  display: none;
+}
+.DeskPrint02 .printCard2 .resultGuide {
+  background: #FFFFFF;
+  border: 2px solid #CFCFCF;
+  border-radius: 10px;
+  padding: 14px 20px;
+  display: flex;
+  gap: 10px;
+}
+.DeskPrint02 .printCard2 .resultGuide .title {
+  width: 45px;
+  border-right: 1px solid #CFCFCF;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 110.84%;
+  letter-spacing: -0.3px;
+  color: #444444;
+}
+.DeskPrint02 .printCard2 .resultGuide .info-tit {
+  padding-left: 20px;
+  position: relative;
+  min-width: 50px;
+}
+.DeskPrint02 .printCard2 .resultGuide .info-tit::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  background: url(../../../public/img/Polygon2.svg) center no-repeat;
+}
+.DeskPrint02 .printCard2 .resultGuide .info-tit h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+  color: #000000;
+}
+.DeskPrint02 .printCard2 .resultGuide .info-tit h5 div {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+.DeskPrint02 .printCard2 .resultGuide .info-tit em {
+  font-weight: 500;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin-top: 7px;
+}
+.DeskPrint02 .printCard2 .resultGuide .info1 table {
+  margin-left: 17px;
+  border-collapse: collapse;
+}
+.DeskPrint02 .printCard2 .resultGuide .info1 table th, .DeskPrint02 .printCard2 .resultGuide .info1 table td {
+  height: 18px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #CFCFCF;
+}
+.DeskPrint02 .printCard2 .resultGuide .info1 table th {
+  width: 90px;
+  background: #F8F8F8;
+}
+.DeskPrint02 .printCard2 .resultGuide .info1 table td {
+  text-align: center;
+  width: 80px;
+}
+.DeskPrint02 .printCard2 .resultGuide .info1 table tr:first-child th,
+.DeskPrint02 .printCard2 .resultGuide .info1 table tr:first-child td {
+  border-top: 2px solid #CFCFCF;
+}
+.DeskPrint02 .printCard2 .resultGuide .info1 table th:first-child {
+  border-left: 0;
+}
+.DeskPrint02 .printCard2 .resultGuide .info1 table td:last-child {
+  border-right: 0;
+}
+.DeskPrint02 .printCard2 .resultGuide .info2,
+.DeskPrint02 .printCard2 .resultGuide .info1 {
+  display: flex;
+}
+.DeskPrint02 .printCard2 .resultGuide .info2 ul {
+  margin-left: 8px;
+}
+.DeskPrint02 .printCard2 .resultGuide .info2 ul li {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: #666666;
+  display: flex;
+  word-break: keep-all;
+}
+.DeskPrint02 .printCard2 .resultGuide .info2 ul li span {
+  display: block;
+  flex: 0 0 auto;
+}
+.DeskPrint02 .printCard2 .resultGuide .info2 ul li + li {
+  margin-top: 2px;
+}
+.DeskPrint02 .printCard2 .signWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.DeskPrint02 .printCard2 .signWrap h5 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+.DeskPrint02 .printCard2 .signWrap .flexWrap {
+  display: flex;
+  gap: 10px;
+}
+.DeskPrint02 .printCard2 .signWrap .inputBx {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  color: #222;
+}
+.DeskPrint02 .printCard2 .signWrap .inputBx input {
+  flex: 1 0 0;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+.DeskPrint02 .printCard2 .signWrap .sign {
+  width: 320px;
+  align-self: flex-end;
+}
+.DeskPrint02 .printCard2 .signWrap .sign pre {
+  margin: 8px 0;
+}
+.DeskPrint02 .printCard2 .signWrap .sign pre label {
+  display: inline-block;
+  width: 120px;
+}
+.DeskPrint02 .printCard2 .bottomMsg {
+  padding: 10px;
+  background-color: #EEEEEE;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  color: #555555;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .DeskPrint02 {
+    padding: 0 100px;
+  }
+  .DeskPrint02 {
+    max-width: 958px;
+  }
+  .DeskPrint02 h1 {
+    margin-bottom: 70px;
+  }
+  .DeskPrint02 .topTable {
+    border: 1px solid #8E8E8E;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 13px;
+  }
+  .DeskPrint02 .topTable .printTable {
+    margin-bottom: 0;
+    border: 0;
+  }
+  .DeskPrint02 .topTable .printTable td, .DeskPrint02 .topTable .printTable th {
+    background-color: transparent;
+    border: 0;
+  }
+  .DeskPrint02 .topTable .printTable th {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .DeskPrint02 .printCard {
+    border: 0;
+    margin-bottom: 0;
+  }
+  .DeskPrint02 .printCard .head {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    height: auto;
+  }
+  .DeskPrint02 .printCard .head h2 {
+    background: #176DBD;
+    border-radius: 4px;
+    border: 0;
+    padding-left: 0;
+    background-image: none;
+    color: #fff;
+    padding: 4.5px 20px;
+  }
+  .DeskPrint02 .printCard .head > div {
+    background: #EEEEEE;
+    border-radius: 4px;
+    margin-top: 13px;
+    padding: 9px 20px;
+  }
+  .DeskPrint02 .printCard .body .tit {
+    padding-left: 68px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .DeskPrint02 .printCard .body .tit b {
+    font-size: inherit;
+    font-weight: 700;
+  }
+  .DeskPrint02 .printCard .body .tit b:nth-of-type(2) {
+    color: #0275B5;
+  }
+  .DeskPrint02 .printCard .body .tit::before {
+    width: 19px;
+    height: 19px;
+    background-color: #6C6C6C;
+    top: 2px;
+  }
+  .DeskPrint02 .printCard .body .tit:first-child::before {
+    background-color: #D72A3D;
+  }
+  .DeskPrint02 .printCard .body .contents {
+    height: 100px;
+  }
+  .DeskPrint02 .printCard2 .head > div {
+    display: none;
+  }
+  .DeskPrint02 .printCard2 .top svg [fill="#55C2E4"] {
+    fill: #2BC5B0;
+  }
+  .printCard2 .printTable td, .printCard2 .printTable th {
+    background-color: transparent;
+  }
+  .DeskPrint02 .printCard .body {
+    padding: 0;
+    padding-top: 16px;
+  }
+  .DeskPrint02 .printCard2 .middle {
+    display: none;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item {
+    align-items: center;
+    padding-left: 200px;
+    background-color: #DFF1FF;
+    border-radius: 20px 10px 10px 20px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item .category {
+    background: #FFFFFF;
+    border: 4px solid #176DBD;
+    border-radius: 20px;
+    width: 180px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item .category h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.045em;
+    color: #000000;
+    margin: 0;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item .category span {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.045em;
+    color: #000000;
+    position: relative;
+    margin-top: 10px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item .category span::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 164px;
+    height: 1px;
+    background-color: #9F9F9F;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item .cont li .inputBx {
+    display: none;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item1 {
+    width: 510px;
+  }
+  .radioWrap.checkType input[type=radio] + label::before {
+    width: 22px;
+    height: 22px;
+  }
+  .radioWrap.checkType input[type=radio]:checked + label::before {
+    background-size: 16px 12px;
+  }
+  input[type=radio] + label {
+    margin-right: 8px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item3 {
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item3 .category {
+    border-radius: 10px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item3 .category h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item3 .field {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    min-height: 0;
+    height: 44px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 {
+    display: flex;
+    background-color: #ECF8F8;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 .category {
+    border-color: #7CC5BD;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 ul {
+    gap: 3px !important;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li span {
+    flex: 1 0 auto;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li > div {
+    flex: 0 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li > div input {
+    width: 54px;
+    height: 22px;
+    text-align: right;
+    font-size: 15px;
+    line-height: 100%;
+    color: #666666;
+    padding: 0 9px;
+    box-sizing: border-box;
+    margin-right: 2px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li > div label {
+    font-size: 15px;
+    line-height: 100%;
+    color: #777777;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li.sum {
+    border-top: 1px solid #C7C7C7;
+    padding-top: 5px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li.sum span {
+    text-align: center;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 li.sum b {
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 .cont {
+    flex: 1 0 auto;
+    padding-right: 30px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 .verdict {
+    border-left: 1px solid #C7C7C7;
+    width: 290px;
+    box-sizing: border-box;
+    flex: 0 0 290px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 .verdict h5 {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 26px;
+    color: #666666;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 .verdict div {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 129.5%;
+    color: #666666;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+    padding: 10px 0;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item4 .verdict span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: #666666;
+  }
+  .DeskPrint02 .printCard2 .signWrap h5 {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .DeskPrint02 .printCard2 .signWrap .inputBx {
+    font-weight: 600;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  .DeskPrint02 .printCard2 .signWrap .inputBx input {
+    border: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+  }
+  .DeskPrint02 .printCard2 .signWrap .inputBx input::placeholder {
+    color: #222;
+  }
+  .DeskPrint02 .printCard2 .signWrap .inputBx:last-child input {
+    text-align: right;
+  }
+  .DeskPrint02 .printCard2 .signWrap .sign {
+    width: 420px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .DeskPrint02 .printCard2 .signWrap .sign pre {
+    margin: 0;
+  }
+  .DeskPrint02 .printCard2 .signWrap .sign pre label {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .DeskPrint02 .printCard2 .bottomMsg {
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .DeskPrint02 .printCard2 .top svg {
+    margin-top: -14px;
+  }
+  .DeskPrint02 .printCard2 .middle2 .item2 .cont .radioWrap,
+.DeskPrint02 .printCard2 .middle2 .item2 .cont h5 {
+    margin-bottom: 0;
+  }
+  .DeskPrint02 .printCard2 .top .printTable th,
+.DeskPrint02 .printCard2 .top .printTable td {
+    height: 29px;
+  }
+}
+
+/*# sourceMappingURL=DeskPrint.css.map */

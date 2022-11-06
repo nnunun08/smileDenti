@@ -1,0 +1,750 @@
+.DeskWait {
+  padding-top: 80px;
+  background-color: #F7F8FC;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.DeskWait .container {
+  padding: 20px 0 30px;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+}
+.DeskWait .inner {
+  max-width: 1062px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  display: flex;
+}
+.DeskWait .inner.flex {
+  flex-direction: column;
+  height: 100%;
+}
+.DeskWait .card {
+  transition: 0.3s;
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  border-radius: 14px;
+  padding: 25px 40px;
+  padding-top: 19px;
+  max-width: 1062px;
+  margin: 0 auto;
+}
+.DeskWait .card.search {
+  position: relative;
+  padding-bottom: 50px;
+}
+.DeskWait .card.search .table {
+  width: 100%;
+  border-bottom: 1px solid #CFCFCF;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  color: #222;
+}
+.DeskWait .card.search .tr {
+  display: flex;
+  align-items: center;
+}
+.DeskWait .card.search .th {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex: 0 0 100px;
+}
+.DeskWait .card.search .td {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+}
+.DeskWait .card.search .th, .DeskWait .card.search .td {
+  padding: 6px 0;
+  font-weight: 600;
+}
+.DeskWait .card.search select {
+  width: 230px;
+}
+.DeskWait .card.search .btnWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.DeskWait .card.search .btnWrap .btn {
+  width: 180px;
+  height: 46px;
+  background: #EEEEEE;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #3F3F3F;
+  border: 0;
+  transition: 0.2s;
+}
+.DeskWait .card.search .btnWrap .btn.btn-ac {
+  background: #0275B5;
+  color: #fff;
+}
+.DeskWait .card.search .btnWrap .btn.btn-ac:hover {
+  background: #068DD8;
+}
+.DeskWait .card.search .btnWrap .btn:hover {
+  background: #F8F8F8;
+}
+.DeskWait .cardWrap {
+  position: relative;
+}
+.DeskWait .cardWrap .arrowUp {
+  width: 140px;
+  height: 40px;
+  background: url(../../../public/img/arrow-up-flat.svg) center no-repeat;
+  border: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.DeskWait .cardWrap .cardAcc {
+  transition: 0.3s;
+  overflow: hidden;
+  opacity: 1;
+  box-shadow: 0px 0px 8px rgba(126, 180, 210, 0.5);
+  border-radius: 14px;
+}
+.DeskWait .cardWrap .cardAcc.normal .card {
+  padding-bottom: 25px;
+}
+.DeskWait .cardWrap .cardAcc.hidden {
+  box-shadow: none;
+}
+.DeskWait .cardWrap .cardAcc.hidden .card {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+}
+.DeskWait .cardWrap .cardAcc.hidden + .arrowUp {
+  bottom: -25px;
+  transform: translateX(-50%) rotate(180deg);
+}
+.DeskWait .today {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #0275B5;
+  height: 34px;
+  width: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #0275B5;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.DeskWait .tablePanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+.DeskWait .tablePanel > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.DeskWait .tablePanel.bottom {
+  align-items: flex-end;
+}
+.DeskWait .tablePanel .count {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: #666;
+}
+.DeskWait .tablePanel .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0 15px 0 18px;
+  min-width: 120px;
+  width: auto;
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #B4BBD3;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #606782;
+}
+.DeskWait .tablePanel .btn.btn-send i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../../../public/img/send.svg) center/cover no-repeat;
+}
+.DeskWait .tablePanel .btn.btn-down i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../../../public/img/download.svg) center/cover no-repeat;
+}
+.DeskWait .tablePanel .btn.btn-sign i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../../../public/img/pen.svg) center/cover no-repeat;
+}
+.DeskWait .tablePanel .btn:hover {
+  background-color: #EDF0F9;
+}
+.DeskWait .tablePanel .table {
+  border: 1px solid #D9DDE9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.DeskWait .tablePanel .table table {
+  border-collapse: collapse;
+}
+.DeskWait .tablePanel .table th {
+  background-color: #EFF3F9;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #222222;
+  height: 34px;
+  padding: 0 10px;
+}
+.DeskWait .tablePanel .table td {
+  background-color: white;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  height: 30px;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 100%;
+  color: #222222;
+}
+.DeskWait .tablePanel .table td:last-child {
+  border-right: 0;
+}
+.DeskWait .tablePanel .table td b {
+  font-weight: 500;
+}
+.DeskWait .tablePanel .table tr:last-child td {
+  border-bottom: 0;
+}
+.DeskWait .tableWrap {
+  margin-top: 10px;
+}
+.DeskWait .tableWrap.tableScroll {
+  flex: 1 0 0;
+  overflow: auto;
+  margin-top: 0;
+}
+.DeskWait .tableWrap table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+.DeskWait .tableWrap table tr.red td {
+  color: #EB2222;
+}
+.DeskWait .tableWrap table tr.red td a, .DeskWait .tableWrap table tr.red td b {
+  color: #EB2222;
+}
+.DeskWait .tableWrap table th {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150.5%;
+  letter-spacing: -0.3px;
+  color: #222222;
+  height: 52px;
+  background: #E8F3FA;
+  border-top: 1px solid #91B7DB;
+  border-bottom: 2px solid #91B7DB;
+}
+.DeskWait .tableWrap table td {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #666666;
+  padding: 9px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.DeskWait .tableWrap table td a, .DeskWait .tableWrap table td b {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: #222222;
+}
+.DeskWait .tableWrap table td a {
+  text-decoration-line: underline;
+}
+.DeskWait .tableWrap table .checkBoxWrap {
+  justify-content: center;
+}
+.DeskWait .tableWrap table .checkItem {
+  width: 22px;
+  height: 22px;
+}
+.DeskWait .tableWrap.table01 td:nth-last-child(1), .DeskWait .tableWrap.table01 td:nth-last-child(2), .DeskWait .tableWrap.table01 td:nth-last-child(3) {
+  color: #999;
+}
+
+.headerDesk {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.inner {
+  max-width: 1062px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.DeskSetting {
+  background: #F7F8FC;
+  padding-top: 80px;
+  min-height: 100vh;
+}
+.DeskSetting .subMn {
+  border-bottom: 1px solid #CFCFCF;
+}
+.DeskSetting .subMn ul {
+  display: flex;
+  margin-top: 12px;
+}
+.DeskSetting .subMn ul li {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  height: 50px;
+  border-bottom: 3px solid transparent;
+  box-sizing: border-box;
+  margin-bottom: -1px;
+}
+.DeskSetting .subMn ul li.ac {
+  border-bottom: 3px solid #0275B5;
+  font-weight: 700;
+  color: #0275B5;
+}
+.DeskSetting .DeskSettingBody {
+  padding: 25px 0 80px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #222222;
+}
+.DeskSetting .DeskSettingBody .card {
+  padding: 52px 50px 72px;
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  border-radius: 14px;
+}
+.DeskSetting .DeskSettingBody .card h1 {
+  font-weight: 700;
+  font-size: 22px;
+  padding-left: 18px;
+  position: relative;
+}
+.DeskSetting .DeskSettingBody .card h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #222222;
+  border-radius: 2px;
+  width: 4px;
+  height: 18px;
+}
+.DeskSetting .DeskSettingBody .form {
+  margin-top: 30px;
+}
+.DeskSetting .DeskSettingBody .form .row + .row {
+  margin-top: 20px;
+}
+.DeskSetting .DeskSettingBody .form .fullRow {
+  flex: 1 0 auto;
+}
+.DeskSetting .DeskSettingBody .form .flex-cc {
+  gap: 12px;
+}
+.DeskSetting .DeskSettingBody .form h2 {
+  flex: 0 0 140px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.DeskSetting .DeskSettingBody .form input {
+  flex: 1 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  height: 45px;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.DeskSetting .DeskSettingBody .form input:disabled {
+  background: #EEEEEE;
+}
+.DeskSetting .DeskSettingBody .form .divider {
+  width: 100%;
+  height: 2px;
+  background: #F2F4F6;
+  margin: 40px 0;
+}
+.DeskSetting .DeskSettingBody .form .table {
+  border: 1px solid #D9DDE9;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 0 0;
+}
+.DeskSetting .DeskSettingBody .form .table table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+.DeskSetting .DeskSettingBody .form .table table th {
+  height: 50px;
+  background: #F8F8F8;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  box-sizing: border-box;
+}
+.DeskSetting .DeskSettingBody .form .table table td {
+  border-bottom: 1px solid #EEEEEE;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.DeskSetting .DeskSettingBody .form .table table tr:last-child td {
+  border: 0;
+}
+.DeskSetting .DeskSettingBody .form .table table select {
+  width: 210px;
+}
+.DeskSetting .DeskSettingBody .form .table table select option[value=""][disabled] {
+  display: none;
+}
+.DeskSetting .DeskSettingBody .form .table table select:not(:focus):invalid {
+  color: #BCBCBC;
+}
+.DeskSetting .DeskSettingBody .form .table table input {
+  width: 200px;
+  height: 34px;
+  font-size: 14px;
+}
+.DeskSetting .DeskSettingBody .form .arrow {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  background: #fff url(../../../public/img/_arrow-up-fill.svg) center no-repeat;
+}
+.DeskSetting .DeskSettingBody .form .arrow.arrowDown {
+  transform: rotate(180deg);
+}
+.DeskSetting .DeskSettingBody .taxtArea {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.DeskSetting .DeskSettingBody .taxtArea h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.DeskSetting .DeskSettingBody .taxtArea .btn38 {
+  align-self: flex-end;
+}
+.DeskSetting .DeskSettingBody .list .top {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #666666;
+  margin-bottom: 15px;
+}
+.DeskSetting .DeskSettingBody .list .top h3 {
+  display: inline;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.DeskSetting .DeskSettingBody .list .top p {
+  display: inline;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  color: #666666;
+}
+.DeskSetting .DeskSettingBody .list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999999;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px 0;
+  padding-left: 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.DeskSetting .DeskSettingBody .list ul li .btn30 {
+  margin-left: 10px;
+}
+.DeskSetting .DeskSettingBody .list ul li.ac span {
+  color: #222222;
+}
+.DeskSetting .DeskSettingBody .dual {
+  margin-top: 14px;
+  display: flex;
+  gap: 73px;
+}
+.DeskSetting .DeskSettingBody .dual .left, .DeskSetting .DeskSettingBody .dual .right {
+  flex: 1 0 0;
+  width: 40%;
+}
+.DeskSetting .DeskSettingBody .dual .row {
+  margin-top: 20px;
+}
+.DeskSetting .DeskSettingBody .dual .row > div {
+  flex: 1 0 0;
+}
+.DeskSetting .DeskSettingBody .dual h2 {
+  font-weight: 600;
+  font-size: 17px;
+  flex: 0 0 140px;
+}
+.DeskSetting .DeskSettingBody .dual input {
+  flex: 1 0 0;
+  box-sizing: border-box;
+  width: 100px;
+  height: 45px;
+}
+.DeskSetting .DeskSettingBody .dual select {
+  width: 100%;
+  height: 45px;
+}
+.DeskSetting .DeskSettingBody .dual .addre h2 {
+  padding-top: 15px;
+}
+.DeskSetting .DeskSettingBody .dual .addre .flex-sb {
+  gap: 12px;
+}
+.DeskSetting .DeskSettingBody .dual .addre input {
+  width: 100%;
+}
+.DeskSetting .DeskSettingBody .dual .valid {
+  padding: 18.5px 22px 12px;
+  background: #F8F8F8;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.DeskSetting .DeskSettingBody .dual .valid span {
+  padding-left: 25px;
+  background: url(../../../public/img/Lock.svg) left center no-repeat;
+}
+.DeskSetting .DeskSettingBody .dual .valid .btn-sh34 {
+  width: 107px;
+}
+.DeskSetting .DeskSettingBody .dual .valid .row {
+  margin-top: 12.5px;
+}
+.DeskSetting .DeskSettingBody .dual .stamp h2 {
+  margin-top: 25px;
+}
+.DeskSetting .DeskSettingBody .dual .stamp div {
+  margin-top: 15px;
+  box-sizing: border-box;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  height: 110px;
+  position: relative;
+}
+.DeskSetting .DeskSettingBody .dual .stamp div i {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: block;
+  text-indent: -9999px;
+  width: 28px;
+  height: 28px;
+  background: url(../../../public/img/edit.svg) center/cover no-repeat;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap {
+  margin-top: 10px;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap.tableScroll {
+  flex: 1 0 0;
+  overflow: auto;
+  margin-top: 0;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table tr.red td {
+  color: #EB2222;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table tr.red td a, .DeskSetting .DeskSettingBody .topCard .tableWrap table tr.red td b {
+  color: #EB2222;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table th {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150.5%;
+  letter-spacing: -0.3px;
+  color: #222222;
+  height: 52px;
+  background: #E8F3FA;
+  border-top: 1px solid #91B7DB;
+  border-bottom: 2px solid #91B7DB;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table td {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #666666;
+  padding: 9px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table td a, .DeskSetting .DeskSettingBody .topCard .tableWrap table td b {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: #222222;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table td a {
+  text-decoration-line: underline;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table .checkBoxWrap {
+  justify-content: center;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table .checkItem {
+  width: 22px;
+  height: 22px;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap.table01 td:nth-last-child(1), .DeskSetting .DeskSettingBody .topCard .tableWrap.table01 td:nth-last-child(2), .DeskSetting .DeskSettingBody .topCard .tableWrap.table01 td:nth-last-child(3) {
+  color: #999;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap {
+  margin-top: 0;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table th {
+  font-weight: 600;
+  font-size: 16px;
+  height: 44px;
+  border-top: 0;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table td {
+  height: 42px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+}
+.DeskSetting .DeskSettingBody .topCard .tableWrap table tr.ac td,
+.DeskSetting .DeskSettingBody .topCard .tableWrap table tr:hover td {
+  background-color: #F8F9FA;
+}
+.DeskSetting .DeskSettingBody .btn-lock {
+  font-weight: 500;
+  font-size: 14px;
+  color: #EB2222;
+  width: 60px;
+  height: 45px;
+  background: #FFFFFF;
+  border: 1px solid #EB2222;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+.DeskSetting .DeskSettingBody .btn-lock:hover {
+  color: white;
+  background: #EB2222;
+  border: 1px solid #EB2222;
+  border-radius: 4px;
+}
+.DeskSetting .DeskSettingBody .subText {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.2px;
+  color: #999999;
+  margin-top: 6px;
+  margin-left: 140px;
+}
+.DeskSetting .DeskSettingBody .authority {
+  margin-top: 40px;
+  padding: 30px 22px 20px;
+  gap: 5px;
+  width: 100%;
+  background: #F8F8F8;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.DeskSetting .DeskSettingBody .authority h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #666666;
+  margin-bottom: 5px;
+  display: block;
+}
+.DeskSetting .DeskSettingBody .authority ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  padding: 10px;
+}
+.DeskSetting .DeskSettingBody .authority ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  flex: 0 0 auto;
+  width: calc((100% - 40px) / 2);
+  border-bottom: 1px solid #EEEEEE;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=DeskSetting.css.map */

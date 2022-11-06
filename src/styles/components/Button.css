@@ -1,0 +1,289 @@
+.btn30 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: 0.2s;
+  border: 0;
+  background: #EEEEEE;
+  color: #666;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 70px;
+  height: 30px;
+}
+.btn30:hover {
+  background: #F8F8F8;
+}
+.btn30.ac {
+  background: #0275B5;
+  color: #fff;
+}
+.btn30.ac:hover {
+  background: #068DD8;
+}
+.btn30.line {
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  color: #222222;
+}
+.btn30.line:hover {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.btn38 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: 0.2s;
+  border: 0;
+  background: #EEEEEE;
+  color: #666;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  min-width: 100px;
+  height: 38px;
+}
+.btn38:hover {
+  background: #F8F8F8;
+}
+.btn38.ac {
+  background: #0275B5;
+  color: #fff;
+}
+.btn38.ac:hover {
+  background: #068DD8;
+}
+.btn38.line {
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  color: #222222;
+}
+.btn38.line:hover {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.btn46 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: 0.2s;
+  border: 0;
+  background: #EEEEEE;
+  color: #666;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 130px;
+  height: 46px;
+}
+.btn46:hover {
+  background: #F8F8F8;
+}
+.btn46.ac {
+  background: #0275B5;
+  color: #fff;
+}
+.btn46.ac:hover {
+  background: #068DD8;
+}
+.btn46.line {
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  color: #222222;
+}
+.btn46.line:hover {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.blue-button {
+  border: none;
+  color: white;
+  padding: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  background: #0275B5;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.blue-button:hover {
+  background-color: #068DD8;
+}
+
+.btn-sh34 {
+  width: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  color: #999999;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  height: 34px;
+  font-size: 14px;
+}
+.btn-sh34.ac {
+  border: 1px solid #0275B5;
+  color: #0275B5;
+}
+.btn-sh34.ac:hover {
+  border: 1px solid #E6EFF4;
+}
+.btn-sh34.red {
+  border: 1px solid #EB2222;
+  color: #EB2222;
+}
+
+.btn-sh45 {
+  width: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  color: #999999;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  height: 45px;
+  font-size: 16px;
+}
+.btn-sh45.ac {
+  border: 1px solid #0275B5;
+  color: #0275B5;
+}
+.btn-sh45.ac:hover {
+  border: 1px solid #E6EFF4;
+}
+.btn-sh45.red {
+  border: 1px solid #EB2222;
+  color: #EB2222;
+}
+
+.BtnSelectDesk {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  min-width: 110px;
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  color: #999999;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  margin-right: 10px;
+  gap: 2px;
+}
+.BtnSelectDesk svg {
+  display: none;
+}
+.BtnSelectDesk:hover, .BtnSelectDesk.check {
+  background: #E8F3FA;
+  border: 1px solid #176DBD;
+  color: #176DBD;
+}
+.BtnSelectDesk:hover path, .BtnSelectDesk.check path {
+  fill: #176DBD;
+}
+.BtnSelectDesk.check svg {
+  display: block;
+}
+.BtnSelectDesk.oran:hover, .BtnSelectDesk.oran.check {
+  border: 1px solid #FF5100;
+  background: rgba(255, 81, 0, 0.05);
+  color: #FF5100;
+}
+.BtnSelectDesk.oran.check path {
+  fill: #FF5100;
+}
+
+.toggle {
+  width: 49px;
+  height: 25px;
+  background: #E7E7E7;
+  border-radius: 50px;
+  position: relative;
+  border: 0;
+}
+.toggle::after {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+}
+.toggle:checked {
+  background-color: #0275B5;
+}
+.toggle:checked::after {
+  left: 27px;
+}
+
+.btn52 {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  height: 52px;
+  padding: 10px;
+  width: 100%;
+  background-color: #B4D6E9;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn52.ac {
+  background-color: #0275B5;
+}
+.btn52.bottom {
+  position: fixed;
+  bottom: 32px;
+  left: 20px;
+  right: 20px;
+  width: calc(100% - 40px);
+}
+
+.mobileWrap .btn52 {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=Button.css.map */

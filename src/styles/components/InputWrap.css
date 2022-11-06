@@ -1,0 +1,71 @@
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrap span {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  /* identical to box height, or 20px */
+  letter-spacing: -0.3px;
+  color: #666666;
+}
+
+.inputWrap input {
+  height: 54px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  box-sizing: border-box;
+}
+
+.inputWrap + .errorText {
+  display: none;
+  height: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.2px;
+  color: #EB2222;
+  margin-top: 6px;
+}
+
+.inputWrap.error + .errorText {
+  display: block;
+}
+
+.inputWrap span.ess {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.2px;
+  color: #FF5100;
+  margin-left: 2px;
+}
+
+.mobile .inputWrap span:not(.ess) {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -0.2px;
+  color: #666666;
+}
+.mobile .inputWrap input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  height: 50px;
+}
+.mobile .inputWrap input:read-only {
+  background-color: #EEEEEE;
+}
+
+/*# sourceMappingURL=InputWrap.css.map */

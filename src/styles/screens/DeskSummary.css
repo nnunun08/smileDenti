@@ -1,0 +1,174 @@
+.deskSummary {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAFAFA;
+  overflow: hidden;
+}
+.deskSummary h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 544px;
+  height: 255px;
+  background-color: #0275B5;
+  border-radius: 0px 0px 30px 30px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -3px;
+  color: #FFFFFF;
+}
+.deskSummary .leftCon {
+  padding: 40px 68px 65px;
+  margin-right: 544px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: calc(100vh - 255px);
+  box-sizing: border-box;
+}
+.deskSummary .leftCon .room {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1 0 auto;
+  text-align: center;
+  padding: 60px 120px 42px;
+  border-radius: 20px;
+  box-shadow: -4px 4px 30px rgba(204, 204, 204, 0.25);
+}
+.deskSummary .leftCon .room h2 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  /* main/black */
+  color: #222222;
+}
+.deskSummary .leftCon .room01 {
+  background-color: #D9E9F8;
+}
+.deskSummary .leftCon .room02 {
+  background-color: #FBE7E8;
+}
+.deskSummary .leftCon .patient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  background: #FFFFFF;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  /* identical to box height, or 80px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  /* main/black */
+  color: #222222;
+}
+.deskSummary .rightCon {
+  width: 544px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 53px;
+  gap: 30px;
+}
+.deskSummary .rightCon .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 115%;
+  color: #fff;
+}
+.deskSummary .rightCon .date .divider {
+  width: 2px;
+  height: 22px;
+  background: #FFFFFF;
+  margin: 0 20px;
+}
+.deskSummary .rightCon .date .yymmdd {
+  display: inline;
+}
+.deskSummary .rightCon .date .time {
+  display: inline;
+  font-weight: 500;
+}
+.deskSummary .rightCon .panel {
+  flex: 1 0 auto;
+  background-color: white;
+  box-shadow: -4px -4px 30px rgba(211, 211, 211, 0.25);
+  border-radius: 30px 0px 0px 0;
+  overflow: hidden;
+}
+.deskSummary .rightCon .panel .tit {
+  padding: 0 38px;
+  height: 136px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #B7D7ED;
+}
+.deskSummary .rightCon .panel .tit h4 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  color: #0275B5;
+  padding-left: 60px;
+  background: url(../../../public/img/waiting.svg) left center no-repeat;
+}
+.deskSummary .rightCon .panel .tit span {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  color: #0275B5;
+}
+.deskSummary .rightCon .panel .tit span b {
+  font-weight: 500;
+  font-size: 60px;
+}
+.deskSummary .rightCon .panel ul li {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  padding: 0 48px;
+  height: 127px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.deskSummary .rightCon .panel ul li .num {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #0275B5;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+}
+.deskSummary .rightCon .panel ul li .name {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #555555;
+}
+
+/*# sourceMappingURL=DeskSummary.css.map */

@@ -1,0 +1,69 @@
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+  position: relative;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #222222;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+input[type=radio] + label::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #BCBCBC;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+input[type=radio]:checked + label {
+  font-weight: 700;
+}
+
+input[type=radio]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0275B5;
+}
+
+.radioWrap.checkType input[type=radio] + label::before {
+  width: 26px;
+  height: 26px;
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF !important;
+  border-color: #CFCFCF !important;
+  border-radius: 4px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.radioWrap.checkType input[type=radio]:checked + label::before {
+  background: #fff url(../../../public/img/ico_check.svg) center no-repeat;
+}
+.radioWrap.checkType input[type=radio]:checked + label::after {
+  display: none;
+}
+.radioWrap.checkType input[type=radio]:checked + label {
+  font-weight: inherit;
+}
+
+.radioWrap.fillType input[type=radio]:checked + label::before {
+  border: 0 !important;
+  background: #0275B5 url(../../../public/img/ico_check_w.svg) center no-repeat;
+}
+
+/*# sourceMappingURL=Radio.css.map */

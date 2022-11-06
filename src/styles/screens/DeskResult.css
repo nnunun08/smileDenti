@@ -1,0 +1,132 @@
+.deskView {
+  padding-top: 80px;
+}
+.deskView.DentistChart .leftInfo {
+  border: 0;
+  padding-right: 44px;
+}
+.deskView.DentistChart .leftInfo .card2 {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 33px;
+}
+.deskView.DentistChart .leftInfo li + li {
+  margin-top: 45px;
+}
+.deskView.DentistChart .leftInfo .tit {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 130%;
+  text-align: center;
+  padding: 10px;
+  background: #E8F3FA;
+  border-radius: 30px;
+  display: block;
+  margin-bottom: 27px;
+  color: #0275B5;
+}
+.deskView.DentistChart .leftInfo .part {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 130%;
+  text-align: center;
+  padding: 10px 20px;
+  color: #FF5100;
+  background: #FFF3EF;
+  border-radius: 30px;
+  word-break: keep-all;
+  margin: 52px 20px;
+}
+.deskView.DentistChart .rightCon {
+  padding-left: 0;
+}
+.deskView.DentistChart .rightCon .resultWrap .score .card {
+  min-height: auto;
+}
+.deskView.DentistChart .rightCon .resultWrap .score .body {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  gap: 20px;
+}
+.deskView.DentistChart .rightCon .resultWrap .score .body .right {
+  position: static;
+  display: flex;
+  width: 100%;
+  height: 173px;
+  gap: 23px;
+}
+.deskView.DentistChart .rightCon .resultWrap .score .body .right ul {
+  margin: 0;
+  margin-top: 10px;
+}
+.deskView.DentistChart .rightCon .resultWrap .score .body .right .standard {
+  flex: 0 0 306px;
+}
+.deskView.DentistChart .rightCon .resultWrap .score .body .right .standard .h5 {
+  justify-content: flex-start;
+}
+.deskView.DentistChart .rightCon .report {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.deskView.DentistChart .rightCon .report .left {
+  position: static;
+  width: 100%;
+}
+.deskView.DentistChart .rightCon .report .left::before {
+  width: 105%;
+  height: 361px;
+  top: -261px;
+}
+.deskView.DentistChart .rightCon .report .left h3 {
+  margin-bottom: 40px;
+}
+.deskView.DentistChart .rightCon .report .left ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 30px 43px;
+}
+.deskView.DentistChart .rightCon .report .left li {
+  width: calc((100% - 10px) / 2);
+}
+
+ul li .question {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 110%;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+ul li .radioWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+ul li .radioWrap label {
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 100%;
+}
+ul li .inputBx input {
+  width: 75px;
+  box-sizing: border-box;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 100%;
+  text-align: right;
+  letter-spacing: -0.3px;
+  margin-right: 4px;
+}
+ul li .inputBx label {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+}
+
+/*# sourceMappingURL=DeskResult.css.map */
