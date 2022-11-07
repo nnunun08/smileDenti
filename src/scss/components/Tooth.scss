@@ -46,14 +46,34 @@
     height: 10px;
     background: url(../../../public/img/btn-tooth02ac.svg) center/cover no-repeat;
 }
+.tooth .too4-img::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 8px;
+    background: url(../../../public/img/btn-tooth04ac.png) center/100% 8px no-repeat;
+    transform: rotate(180deg);
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .tooth div {
     display: none;
 }
 .tooth.too1 .too1-img,
 .tooth.too2 .too2-img,
-.tooth.too3 .too3-img {
+.tooth.too3 .too3-img,
+.tooth.too4 .too4-img {
     display: block;
 } 
+
+.too4 .toolWrap,
+.too4-img {
+    width: 100%;
+}
+
 .toolWrap {
     display: flex;
     gap: 5px;

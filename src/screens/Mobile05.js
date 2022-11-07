@@ -4,7 +4,7 @@ import InputWrap from '../components/InputWrap'
 import CheckBox from '../components/CheckBox'
 import Button from '../components/Button'
 import Radio from '../components/Radio'
-import '../styles/screens/mobile.css'
+import '../styles/screens/Mobile.css'
 import MobileNav from '../components/MobileNav'
 
 export default function Mobile05() {

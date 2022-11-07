@@ -3,7 +3,7 @@ import Btn from '../components/Btn'
 import InputWrap from '../components/InputWrap'
 import CheckBox from '../components/CheckBox'
 import Button from '../components/Button'
-import '../styles/screens/mobile.css'
+import '../styles/screens/Mobile.css'
 import MobileNav from '../components/MobileNav'
 
 export default function Mobile02() {

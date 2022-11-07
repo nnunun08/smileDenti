@@ -1,34 +1,35 @@
 .mobileWrap {
     max-width: 360px;
     margin: 0 auto;
+    .mobileCon {
+        padding-top: 62px;
+    }
+    .off + .mobileCon {
+        padding-top: 196px;
+    }
+    .mobileInner {
+        padding: 0 20px;
+    }
+    
+    .logo {
+        background: url(../../../public/img/logo.svg) center/cover no-repeat;
+        width: 213px;
+        height: 52px;
+        margin: 0 auto;
+        margin-top: 182px;
+    }
+    
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #666666;
+        margin-top: 25px;
+    }
 }
 
-.mobileCon {
-    padding-top: 62px;
-}
-.off + .mobileCon {
-    padding-top: 106px;
-}
-.mobileInner {
-    padding: 0 20px;
-}
 
-.logo {
-    background: url(../../../public/img/logo.svg) center/cover no-repeat;
-    width: 213px;
-    height: 52px;
-    margin: 0 auto;
-    margin-top: 182px;
-}
-
-p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #666666;
-    margin-top: 25px;
-}
 
 .form.mobile {
     .row+.row {

@@ -17,6 +17,11 @@ import Mobile02 from './screens/Mobile02';
 import Mobile03 from './screens/Mobile03';
 import Mobile04 from './screens/Mobile04';
 import Mobile05 from './screens/Mobile05';
+import TabletLogin from './screens/TabletLogin';
+import TabletReception from './screens/TabletReception';
+import Tablet01 from './screens/Tablet01';
+import Tablet02 from './screens/Tablet02';
+import Tablet03 from './screens/Tablet03';
 
 function App() {
     return (
@@ -38,6 +43,11 @@ function App() {
                 <Route path="/desk/print01" component={DeskPrint01} exact />
                 <Route path="/desk/print02" component={DeskPrint02} exact />
                 <Route path="/desk/print02" component={DeskPrint02} exact />
+                <Route path="/desk/tabletLogin" component={TabletLogin} exact />
+                <Route path="/desk/tabletReception" component={TabletReception} exact />
+                <Route path="/desk/Tablet01" component={Tablet01} exact />
+                <Route path="/desk/Tablet02" component={Tablet02} exact />
+                <Route path="/desk/Tablet03" component={Tablet03} exact />
 
                 <Route path="/mobile/Mobile01" component={Mobile01} exact />
                 <Route path="/mobile/Mobile02" component={Mobile02} exact />

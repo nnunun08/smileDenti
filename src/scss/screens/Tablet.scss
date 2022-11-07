@@ -1,0 +1,120 @@
+.tabletLogin {
+    max-width: 360px;
+    margin: 0 auto;
+    .formWrap {
+        padding-top: 142px;
+        svg {
+            width: 240px;
+        }
+        .form {
+            width: 100%;
+            margin-top: 80px;
+        }
+    }   
+    .inputWrap {
+        span {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 100%;
+            letter-spacing: -0.2px;
+            color: #666666;
+        }
+        input {
+            height: 50px;
+        }
+    } 
+    .inputWrap + .errorText {
+        font-size: 12px;
+    }
+    .checkBoxWrap {
+        font-size: 15px;
+    }
+    .blue-button {
+        height: 52px;
+        font-weight: 700;
+        font-size: 16px;
+    }   
+}
+
+.reception {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tablet {
+    color: #222222;
+    max-width: 360px;
+    margin: 0 auto;
+    .mobileNav {
+        padding-top: 68px !important;
+        margin-bottom: 53px;
+        position: static;
+        h1 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    .inputWrap span.ess {
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .flexBx {
+        .btn-sh34 {
+            width: 70px;
+            height: 50px;
+            margin-top: 6px;
+            flex: 0 0 70px;
+        }
+    }
+    .submitBtn {
+        margin-top: 50px;
+    }
+
+    .mobile4 {
+        padding-top: 42px !important;
+        padding-bottom: 0;
+        .top {
+            position: static;
+        }
+        & + .submitBtn {
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 34px;
+            max-width: 320px;
+        }
+        .fixedTop {
+            background-color: white;
+        }
+        .fixedTopArrow {
+            width: 24px;
+            height: 24px;
+            background: url(../../../public/img/arrow-left.svg) center no-repeat;
+            transform: rotate(-90deg);
+            margin-top: 38px;
+            margin-bottom: 28px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+        }
+    }    
+    .mobileFinish h1 {
+        font-size: 32px;
+        margin-bottom: 7px;
+    }
+    .mobileFinish h2 {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .mobileFinish p {
+        font-size: 15px;
+    }
+    .mobileFinish + .submitBtn {
+        margin: 0 auto;
+        margin-bottom: 34px;
+        margin-top: 80px;
+        max-width: 320px;
+    }
+}

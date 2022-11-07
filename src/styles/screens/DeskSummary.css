@@ -1,8 +1,10 @@
 .deskSummary {
   width: 100vw;
   height: 100vh;
+  min-width: 1920px;
   background-color: #FAFAFA;
   overflow: hidden;
+  position: relative;
 }
 .deskSummary h1 {
   display: flex;
@@ -32,8 +34,10 @@
 .deskSummary .leftCon .room {
   display: flex;
   flex-direction: column;
+  height: 400px;
   gap: 40px;
-  flex: 1 0 auto;
+  flex: 0 0 400px;
+  box-sizing: border-box;
   text-align: center;
   padding: 60px 120px 42px;
   border-radius: 20px;
@@ -72,7 +76,7 @@
 }
 .deskSummary .rightCon {
   width: 544px;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   height: 100vh;
@@ -140,6 +144,10 @@
 .deskSummary .rightCon .panel .tit span b {
   font-weight: 500;
   font-size: 60px;
+}
+.deskSummary .rightCon .panel ul {
+  height: 896px;
+  overflow: hidden;
 }
 .deskSummary .rightCon .panel ul li {
   display: flex;

@@ -2,28 +2,23 @@
   max-width: 360px;
   margin: 0 auto;
 }
-
-.mobileCon {
+.mobileWrap .mobileCon {
   padding-top: 62px;
 }
-
-.off + .mobileCon {
-  padding-top: 106px;
+.mobileWrap .off + .mobileCon {
+  padding-top: 196px;
 }
-
-.mobileInner {
+.mobileWrap .mobileInner {
   padding: 0 20px;
 }
-
-.logo {
+.mobileWrap .logo {
   background: url(../../../public/img/logo.svg) center/cover no-repeat;
   width: 213px;
   height: 52px;
   margin: 0 auto;
   margin-top: 182px;
 }
-
-p {
+.mobileWrap p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -361,4 +356,4 @@ p {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=mobile.css.map */
+/*# sourceMappingURL=Mobile.css.map */

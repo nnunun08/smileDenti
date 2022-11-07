@@ -1,19 +1,88 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Btn from '../components/Btn'
 import InputWrap from '../components/InputWrap'
 import CheckBox from '../components/CheckBox'
-import Button from '../components/Button'
-import Radio from '../components/Radio'
-import '../styles/screens/Mobile.css'
 import MobileNav from '../components/MobileNav'
+import Radio from '../components/Radio'
+import '../styles/screens/Tablet.css'
 
-export default function Mobile04({count='13'}) {
-
+export default function Tablet02({count='13'}) {
     return(
-        <div className='mobileWrap'>
-            <MobileNav label={'구강검진문진표'} back={'off'} />
-            <div className='mobileCon mobile4 over'>
-                <div className="top">
+        <div className='tablet'>
+            <MobileNav label={'문진표 작성'} back={'off'} />
+            <div className='form mobile'>
+                <div className='row'>
+                    <InputWrap
+                        label='이름'
+                        readOnly={true}
+                        placeholder={''}
+                    />
+                </div>
+                <div className='row'>
+                    <InputWrap
+                        label='생년월일'
+                        readOnly={true}
+                    />
+                </div>
+                <div className='row'>
+                    <label className={`inputWrap`}>
+                        <span>{'휴대번호'}</span>
+                        <div className='flexBx'>
+                            <input type='tel' className='' readOnly/>
+                        </div>
+                    </label>    
+                </div>
+                <div className='row'>
+                    <label className={`inputWrap`}>
+                        <span>{'인증번호'}</span>
+                        <div className='flexBx'>
+                            <input type='text' className='' placeholder={'-없이 숫자만 입력'}/>
+                            <span class="userResetItem"></span>
+                            <Btn
+                                label={'확인'}
+                                className={'btn-sh34 '}
+                            />
+                        </div>
+                    </label>    
+                </div>
+
+                <div className='divider'></div>
+                <div>
+                    <h3>통보서 수신방법<span className='ess'>*</span></h3>
+                </div>
+                
+                <div className='group'>
+                    <label class="checkBoxWrap" for="sms">
+                        <CheckBox
+                            id='sms'
+                            type=''
+                        />
+                        SMS 발송
+                    </label>
+                    <div className='formBx'><input type='tel' /></div>
+                </div>
+                <div className='group'>
+                    <label class="checkBoxWrap" for="email">
+                        <CheckBox
+                            id='email'
+                            type=''
+                        />
+                        이메일
+                    </label>
+                    <div className='formBx'>
+                        <input type='text' />
+                        <span>@</span>
+                        <select>
+                            <option>naver.com</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div className='mobileCon mobile4'>
+                <div className='fixedTop'>
+                    <div className='fixedTopArrow'></div>
+                    <div className="top">
                         <div className='tit'>
                             (치과)병력과 구강건강인식도 관련 문항
                         </div>
@@ -28,6 +97,7 @@ export default function Mobile04({count='13'}) {
                             </div>
                         </div>
                     </div>
+                </div>
 
                 <div className="mobileInner">
                     <div className='quesItem'>
@@ -46,11 +116,6 @@ export default function Mobile04({count='13'}) {
                                 id={'id01-2'}
                                 name={'q01'}
                                 label={'아니오'}
-                            />
-                            <Radio
-                                id={'id01-3'}
-                                name={'q01'}
-                                label={'모르겠다'}
                             />
                         </div>
                     </div>
@@ -90,7 +155,7 @@ export default function Mobile04({count='13'}) {
             </div>
             <Btn
                 label={'저장'}
-                className={'btn52 bottom ac'}
+                className={'btn52 submitBtn'}
             />
         </div>
     )

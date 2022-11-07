@@ -1,12 +1,14 @@
 .deskSummary {
-
-    $topheight : 255px;
+    $topheight: 255px;
     $rightWidth: 544px;
     width: 100vw;
     height: 100vh;
+    min-width: 1920px;
     background-color: #FAFAFA;
     overflow: hidden;
-    h1{
+    position: relative;
+
+    h1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,6 +24,7 @@
         letter-spacing: -3px;
         color: #FFFFFF;
     }
+
     .leftCon {
         padding: 40px 68px 65px;
         margin-right: 544px;
@@ -30,33 +33,40 @@
         gap: 40px;
         height: calc(100vh - $topheight);
         box-sizing: border-box;
-        .room { 
+
+        .room {
             display: flex;
             flex-direction: column;
+            height: 400px;
             gap: 40px;
-            flex: 1 0 auto;
+            flex: 0 0 400px;
+            box-sizing: border-box;
             text-align: center;
             padding: 60px 120px 42px;
             border-radius: 20px;
             box-shadow: -4px 4px 30px rgba(204, 204, 204, 0.25);
+
             h2 {
                 font-weight: 500;
-font-size: 64px;
-line-height: 100%;
-letter-spacing: -0.3px;
+                font-size: 64px;
+                line-height: 100%;
+                letter-spacing: -0.3px;
 
-/* main/black */
+                /* main/black */
 
-color: #222222;
+                color: #222222;
 
             }
         }
+
         .room01 {
             background-color: #D9E9F8;
         }
+
         .room02 {
             background-color: #FBE7E8;
         }
+
         .patient {
             display: flex;
             justify-content: center;
@@ -65,24 +75,24 @@ color: #222222;
             background: #FFFFFF;
             border-radius: 20px;
             font-weight: 700;
-font-size: 80px;
-line-height: 100%;
-/* identical to box height, or 80px */
+            font-size: 80px;
+            line-height: 100%;
+            /* identical to box height, or 80px */
 
-display: flex;
-align-items: center;
-letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.3px;
 
-/* main/black */
+            /* main/black */
 
-color: #222222;
+            color: #222222;
 
         }
     }
 
     .rightCon {
         width: $rightWidth;
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
         height: 100vh;
@@ -90,6 +100,7 @@ color: #222222;
         flex-direction: column;
         padding-top: 53px;
         gap: 30px;
+
         .date {
             display: flex;
             align-items: center;
@@ -98,32 +109,39 @@ color: #222222;
             font-size: 32px;
             line-height: 115%;
             color: #fff;
+
             .divider {
                 width: 2px;
                 height: 22px;
-                background: #FFFFFF;;
+                background: #FFFFFF;
+                ;
                 margin: 0 20px;
             }
+
             .yymmdd {
-                display:inline;
+                display: inline;
             }
+
             .time {
-                display:inline;
+                display: inline;
                 font-weight: 500;
             }
         }
+
         .panel {
             flex: 1 0 auto;
             background-color: white;
             box-shadow: -4px -4px 30px rgba(211, 211, 211, 0.25);
             border-radius: 30px 0px 0px 0;
             overflow: hidden;
+
             .tit {
                 padding: 0 38px;
                 height: 136px;
                 display: flex;
                 justify-content: space-between;
                 border-bottom: 2px solid #B7D7ED;
+
                 h4 {
                     font-weight: 500;
                     font-size: 50px;
@@ -135,6 +153,7 @@ color: #222222;
                     padding-left: 60px;
                     background: url(../../../public/img/waiting.svg) left center no-repeat;
                 }
+
                 span {
                     font-weight: 500;
                     font-size: 40px;
@@ -142,14 +161,19 @@ color: #222222;
                     display: flex;
                     align-items: center;
                     letter-spacing: -0.3px;
-                    color: #0275B5; 
+                    color: #0275B5;
+
                     b {
                         font-weight: 500;
                         font-size: 60px;
                     }
                 }
             }
+
             ul {
+                height: 896px;
+                overflow: hidden;
+
                 li {
                     display: flex;
                     align-items: center;
@@ -157,6 +181,7 @@ color: #222222;
                     padding: 0 48px;
                     height: 127px;
                     border-bottom: 1px solid #EAEAEA;
+
                     .num {
                         width: 72px;
                         height: 72px;
@@ -171,6 +196,7 @@ color: #222222;
                         letter-spacing: -0.3px;
                         color: #FFFFFF;
                     }
+
                     .name {
                         font-weight: 500;
                         font-size: 60px;

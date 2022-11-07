@@ -71,3 +71,16 @@
         }
     }
 }
+.useReset {
+    position: relative;
+    .userResetItem {
+        display: block;
+        position: absolute;
+        right: 14px;
+        bottom: 13px;
+        width: 24px;
+        height: 24px;
+        background: url(../../../public/img/x-btn.svg) center no-repeat;
+        cursor: pointer;
+    }
+}

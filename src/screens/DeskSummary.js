@@ -59,18 +59,6 @@ export default function DeskSummary() {
                             <span className='num'>01</span>
                             <span className='name'>김 O 가</span>
                         </li>
-                        <li>
-                            <span className='num'>01</span>
-                            <span className='name'>김 O 가</span>
-                        </li>
-                        <li>
-                            <span className='num'>01</span>
-                            <span className='name'>김 O 가</span>
-                        </li>
-                        <li>
-                            <span className='num'>01</span>
-                            <span className='name'>김 O 가</span>
-                        </li>
                     </ul>
                 </div>
             </div> 

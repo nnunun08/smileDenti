@@ -192,7 +192,10 @@ export default function DeskResult() {
                                             <Tooth 
                                                 toothNum='5'
                                                 op='too3'/>
-                                            <Tooth toothNum='4'/>
+                                            <Tooth 
+                                                toothNum='4'
+                                                op='too4'
+                                            />
                                             <Tooth toothNum='3'/>
                                             <Tooth toothNum='2'/>
                                             <Tooth toothNum='1'/>
@@ -219,7 +222,10 @@ export default function DeskResult() {
                                             <Tooth toothNum='6'/>
                                             <Tooth toothNum='5'/>
                                             <Tooth toothNum='4'/>
-                                            <Tooth toothNum='3'/>
+                                            <Tooth 
+                                                toothNum='3'
+                                                op='too4'
+                                            />
                                             <Tooth toothNum='2'/>
                                             <Tooth toothNum='1'/>
                                         </div>
@@ -229,7 +235,10 @@ export default function DeskResult() {
                                             <Tooth toothNum='1'/>
                                             <Tooth toothNum='2'/>
                                             <Tooth toothNum='3'/>
-                                            <Tooth toothNum='4'/>
+                                            <Tooth 
+                                                toothNum='4'
+                                                op='too4'
+                                            />
                                             <Tooth toothNum='5'/>
                                             <Tooth toothNum='6'/>
                                             <Tooth toothNum='7'/>
@@ -243,7 +252,7 @@ export default function DeskResult() {
                                     <button className='btn-tooth btn-tooth01 ac'><i></i>우식치아</button>
                                     <button className='btn-tooth btn-tooth02 ac'><i></i>우식의심치아</button>
                                     <button className='btn-tooth btn-tooth03 ac'><i></i>상실치아</button>
-                                    <button className='btn-tooth btn-tooth04'><i></i>잇몸부종</button>
+                                    <button className='btn-tooth btn-tooth04 ac'><i></i>잇몸부종</button>
                                 </div>
                             </div>
 

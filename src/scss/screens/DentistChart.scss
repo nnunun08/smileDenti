@@ -297,11 +297,21 @@
 .DentistChart .rightCon .resultWrap td.toothLB {
     border-width: 1px 1px 0 0;
     padding: 14px 9px 0 0;
+    .too4-img::before {
+        transform: rotate(0deg);
+        top: auto;
+        bottom: 0;
+    }
 }
 
 .DentistChart .rightCon .resultWrap td.toothRB {
     border-width: 1px 0 0 1px;
     padding: 14px 0 0 9px;
+    .too4-img::before {
+        transform: rotate(0deg);
+        top: auto;
+        bottom: 0;
+    }
 }
 
 .DentistChart .rightCon .resultWrap .bottom {

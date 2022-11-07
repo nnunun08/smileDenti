@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import DeskHeader from '../components/DeskHeader'
 import '../styles/screens/DeskSetting.css'
 import Btn from '../components/Btn'
 import Toggle from '../components/Toggle'
 
 export default function DeskSetting() {
+
+    const [edit, setEdit] = useState('')
+    const editActive = () => {
+        setEdit(edit === 'edit'?'':'edit')
+    }
+
     return (
         <>
         <DeskHeader 
@@ -175,10 +181,11 @@ export default function DeskSetting() {
                                 <p>수정 버튼이나 더블클릭으로 수정가능합니다</p>
                             </div>
                             <ul>
-                                <li className='ac'>
-                                    <span>치아우식증(충치)이 의심되는 치아가 있습니다. </span>
+                                <li>
+                                    <span className={edit} onDoubleClick={editActive}>치아우식증(충치)이 의심되는 치아가 있습니다. <input type='text'/> </span>
                                     <div>
-                                        <Btn label={'수정'} className={'btn30 line'} />
+                                        <Btn label={'저장'} className={'btn30 ac'} />
+                                        <Btn label={'수정'} className={'btn30 line'} onClick={editActive}/>
                                         <Btn label={'삭제'} className={'btn30'} />
                                     </div>
                                 </li>
@@ -290,7 +297,11 @@ export default function DeskSetting() {
                                 <div class="stamp">
                                     <h2>도장 이미지</h2>
                                     <div>
-                                        <i></i>
+                                        <input className='insertStamp' type='file'/>
+                                        {/* 도장이미지를 .imgWrap 안에 img 태그로 넣어주세요 */}
+                                        <div class="imgWrap">
+                                            <img src='../../../img/stamp_dummy.png' />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -480,7 +491,11 @@ export default function DeskSetting() {
                                 <div class="stamp">
                                     <h2>도장 이미지</h2>
                                     <div>
-                                        <i></i>
+                                        <input className='insertStamp' type='file'/>
+                                        {/* 도장이미지를 .imgWrap 안에 img 태그로 넣어주세요 */}
+                                        <div class="imgWrap">
+                                            <img src='../../../img/stamp_dummy.png' />
+                                        </div>
                                     </div>
                                 </div>
 

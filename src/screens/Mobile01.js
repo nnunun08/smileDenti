@@ -1,6 +1,6 @@
 import React from 'react'
 import Btn from '../components/Btn'
-import '../styles/screens/mobile.css'
+import '../styles/screens/Mobile.css'
 
 export default function Mobile01() {
     return(
