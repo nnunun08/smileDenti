@@ -345,6 +345,81 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.DeskPrint02 .printCard2 .middle table .toothLT .tooth:nth-child(3) {
+  transform: translateX(3px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLT .tooth:nth-child(4) {
+  transform: translateX(6px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLT .tooth:nth-child(5) {
+  transform: translateX(6px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLT .tooth:nth-child(6) {
+  transform: translateX(6px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLT .tooth:nth-child(7) {
+  transform: translateX(6px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRT .tooth:nth-child(2) {
+  transform: translateX(-2px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRT .tooth:nth-child(3) {
+  transform: translateX(-4px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRT .tooth:nth-child(4) {
+  transform: translateX(-6px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRT .tooth:nth-child(5) {
+  transform: translateX(-10px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRT .tooth:nth-child(6) {
+  transform: translateX(-8px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRT .tooth:nth-child(7) {
+  transform: translateX(-4px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLB .tooth:nth-child(2) {
+  transform: translateX(3px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLB .tooth:nth-child(3) {
+  transform: translateX(4px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLB .tooth:nth-child(4) {
+  transform: translateX(9px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLB .tooth:nth-child(5) {
+  transform: translateX(8px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLB .tooth:nth-child(6) {
+  transform: translateX(8px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLB .tooth:nth-child(7) {
+  transform: translateX(8px);
+}
+.DeskPrint02 .printCard2 .middle table .toothLB .tooth:nth-child(8) {
+  transform: translateX(3px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRB .tooth:nth-child(2) {
+  transform: translateX(-4px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRB .tooth:nth-child(3) {
+  transform: translateX(-4px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRB .tooth:nth-child(4) {
+  transform: translateX(-8px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRB .tooth:nth-child(5) {
+  transform: translateX(-12px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRB .tooth:nth-child(6) {
+  transform: translateX(-8px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRB .tooth:nth-child(7) {
+  transform: translateX(-5px);
+}
+.DeskPrint02 .printCard2 .middle table .toothRB .tooth:nth-child(8) {
+  transform: translateX(-2px);
+}
 .DeskPrint02 .printCard2 .middle .bottom {
   display: flex;
   justify-content: center;

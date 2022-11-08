@@ -330,7 +330,11 @@
   min-height: 100vh;
 }
 .DeskSetting .subMn {
+  position: fixed;
+  width: 100%;
   border-bottom: 1px solid #CFCFCF;
+  background-color: #f7f8fc;
+  z-index: 1;
 }
 .DeskSetting .subMn ul {
   display: flex;
@@ -359,7 +363,7 @@
   color: #0275B5;
 }
 .DeskSetting .DeskSettingBody {
-  padding: 25px 0 80px;
+  padding: 87px 0 80px;
   line-height: 100%;
   letter-spacing: -0.3px;
   color: #222222;

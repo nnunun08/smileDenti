@@ -22,6 +22,7 @@ import TabletReception from './screens/TabletReception';
 import Tablet01 from './screens/Tablet01';
 import Tablet02 from './screens/Tablet02';
 import Tablet03 from './screens/Tablet03';
+import DeskCall from './screens/DeskCall';
 
 function App() {
     return (
@@ -48,6 +49,7 @@ function App() {
                 <Route path="/desk/Tablet01" component={Tablet01} exact />
                 <Route path="/desk/Tablet02" component={Tablet02} exact />
                 <Route path="/desk/Tablet03" component={Tablet03} exact />
+                <Route path="/desk/DeskCall" component={DeskCall} exact />
 
                 <Route path="/mobile/Mobile01" component={Mobile01} exact />
                 <Route path="/mobile/Mobile02" component={Mobile02} exact />

@@ -306,6 +306,47 @@
                     top: 50%;
                     transform: translateY(-50%);
                 }
+
+                // 치아별 크기 커스텀
+                .toothLT {
+                    // 좌상
+                    .tooth:nth-child(3) {transform: translateX(3px);}
+                    .tooth:nth-child(4) {transform: translateX(6px);}
+                    .tooth:nth-child(5) {transform: translateX(6px);}
+                    .tooth:nth-child(6) {transform: translateX(6px);}
+                    .tooth:nth-child(7) {transform: translateX(6px);}
+                }
+                .toothRT {
+                    // 우상
+                    .tooth:nth-child(2) {transform: translateX(-2px);}
+                    .tooth:nth-child(3) {transform: translateX(-4px);}
+                    .tooth:nth-child(4) {transform: translateX(-6px);}
+                    .tooth:nth-child(5) {transform: translateX(-10px);}
+                    .tooth:nth-child(6) {transform: translateX(-8px);}
+                    .tooth:nth-child(7) {transform: translateX(-4px);}
+                }
+                .toothLB {
+                    // 좌하
+                    .tooth:nth-child(2) {transform: translateX(3px);}
+                    .tooth:nth-child(3) {transform: translateX(4px);}
+                    .tooth:nth-child(4) {transform: translateX(9px);}
+                    .tooth:nth-child(5) {transform: translateX(8px);}
+                    .tooth:nth-child(6) {transform: translateX(8px);}
+                    .tooth:nth-child(7) {transform: translateX(8px);}
+                    .tooth:nth-child(8) {transform: translateX(3px);}
+                }
+                .toothRB {
+                    // 우하
+                    .tooth:nth-child(2) {transform: translateX(-4px);}
+                    .tooth:nth-child(3) {transform: translateX(-4px);}
+                    .tooth:nth-child(4) {transform: translateX(-8px);}
+                    .tooth:nth-child(5) {transform: translateX(-12px);}
+                    .tooth:nth-child(6) {transform: translateX(-8px);}
+                    .tooth:nth-child(7) {transform: translateX(-5px);}
+                    .tooth:nth-child(8) {transform: translateX(-2px);}
+                }
+
+
             }
             .bottom {
                 display: flex;

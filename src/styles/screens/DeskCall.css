@@ -1,0 +1,88 @@
+.deskCall {
+  width: 1340px;
+  height: 800px;
+  background-color: #F9FDFF;
+  position: relative;
+  padding-top: 323px;
+  box-sizing: border-box;
+}
+.deskCall .badge {
+  position: absolute;
+  top: 0;
+  left: 110px;
+  width: 217px;
+  height: 285px;
+  background: url(../../../public/img/deskCallBadge.svg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 53px;
+}
+.deskCall .badge h4 {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+.deskCall .badge .num {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+.deskCall .doctor {
+  position: absolute;
+  right: 110px;
+  top: 73.5px;
+  width: 935px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 98px;
+  line-height: 100%;
+  color: #0275B5;
+  padding-bottom: 35.5px;
+  border-bottom: 4px solid #0275B5;
+}
+.deskCall .doctor b {
+  font-weight: 700;
+}
+.deskCall .patient {
+  text-align: center;
+  font-weight: 300;
+  font-size: 200px;
+  line-height: 100%;
+  letter-spacing: 10px;
+  color: #222222;
+}
+.deskCall .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #EAF5FF;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  color: #222222;
+}
+.deskCall .info span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url(../../../public/img/speaker.svg) no-repeat;
+}
+
+/*# sourceMappingURL=DeskCall.css.map */

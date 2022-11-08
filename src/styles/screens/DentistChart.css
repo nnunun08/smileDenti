@@ -665,7 +665,6 @@
 .DentistChart .rightCon .resultWrap .score .body .left {
   margin-right: 20px;
 }
-
 .DentistChart .rightCon .resultWrap .score .body .left li {
   display: flex;
   justify-content: space-between;
@@ -677,9 +676,58 @@
   color: #222222;
   gap: 16px;
   padding: 0 10px 0 4px;
+  margin-bottom: 13px;
+}
+.DentistChart .rightCon .resultWrap .score .body .left li.ave {
+  margin-bottom: 0;
 }
 .DentistChart .rightCon .resultWrap .score .body .left li.ave .value {
   font-weight: 700;
+}
+.DentistChart .rightCon .resultWrap .score .body .left li.ac + .chkScore {
+  display: flex;
+}
+.DentistChart .rightCon .resultWrap .score .body .left .chkScore {
+  display: none;
+  justify-content: space-between;
+  gap: 10px;
+  padding-right: 27px;
+  margin: 10px 0 30px;
+}
+.DentistChart .rightCon .resultWrap .score .body .left .chkScore .label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #606782;
+  padding: 0 5px 0 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.DentistChart .rightCon .resultWrap .score .body .left .chkScore .label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(../../../public/img/chkScore.svg) center no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+.DentistChart .rightCon .resultWrap .score .body .left .chkScore button {
+  flex: 1 0 0;
+  height: 36px;
+  padding: 0 20px;
+  border: 1px solid #91B7DB;
+  border-radius: 4px;
+  background-color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #222222;
 }
 
 .DentistChart .rightCon .resultWrap .score .body .left li + li {
@@ -713,6 +761,7 @@
   font-size: 16px;
   display: inline-block;
   margin-right: 4px;
+  cursor: pointer;
 }
 
 .DentistChart .rightCon .resultWrap .score .body .left li .value + span {
@@ -856,7 +905,7 @@
   width: 107px;
   height: 107px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3) url(../../../public/img/ic_chart.png) center no-repeat;
+  background: rgba(255, 255, 255, 0.3) url(../../../public/img/ic_chart.svg) center no-repeat;
 }
 
 .DentistChart .rightCon .report .left h3 {

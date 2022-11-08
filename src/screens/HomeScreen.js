@@ -28,6 +28,7 @@ export default function HomeScreen() {
             <a href="/desk/Tablet01">Tablet01</a>
             <a href="/desk/Tablet02">Tablet02</a>
             <a href="/desk/Tablet03">Tablet03</a>
+            <a href="/desk/DeskCall">DeskCall</a>
             <hr/>
             <h3>MOBILE</h3>
             <a href="/mobile/Mobile01">Mobile01</a>

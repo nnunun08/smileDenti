@@ -81,12 +81,14 @@
             padding-left: 0;
             margin-bottom: 20px;
             .left {
+                z-index: 1;
                 position: static;
                 width: 100%;
                 &::before {
                     width: 105%;
                     height: 361px;
                     top: -261px;
+                    z-index: -1;
                 }
                 h3 {
                     margin-bottom: 40px;

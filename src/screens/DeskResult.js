@@ -4,8 +4,11 @@ import Tooth from '../components/Tooth'
 import DeskHeader from '../components/DeskHeader'
 import Radio from '../components/Radio'
 import '../styles/screens/DeskResult.css'
+import ChkScore from '../components/ChkScore'
 
 export default function DeskResult() {
+    
+
 
     return (
         <>
@@ -373,7 +376,7 @@ export default function DeskResult() {
                                     </div>
                                     <div className='body'>
                                         <ul className='left'>
-                                            <li>
+                                            <li className={'ac'}>
                                                 <div>
                                                     상악우측제1대구치
                                                     <span className='num'>{16}번</span>
@@ -384,6 +387,7 @@ export default function DeskResult() {
                                                     <span>점</span>
                                                 </div>
                                             </li>
+                                            <ChkScore />
                                             <li>
                                                 <div>
                                                     상악우측중절치
@@ -395,6 +399,7 @@ export default function DeskResult() {
                                                     <span>점</span>
                                                 </div>
                                             </li>
+                                            <ChkScore />
                                             <li>
                                                 <div>
                                                     상악좌측제1대구치
@@ -406,6 +411,7 @@ export default function DeskResult() {
                                                     <span>점</span>
                                                 </div>
                                             </li>
+                                            <ChkScore />
                                             <li>
                                                 <div>
                                                     하악좌측제1대구치
@@ -417,6 +423,7 @@ export default function DeskResult() {
                                                     <span>점</span>
                                                 </div>
                                             </li>
+                                            <ChkScore />
                                             <li>
                                                 <div>
                                                     하악좌측중절치
@@ -428,6 +435,7 @@ export default function DeskResult() {
                                                     <span>점</span>
                                                 </div>
                                             </li>
+                                            <ChkScore />
                                             <li>
                                                 <div>
                                                     하악우측제1대구치
@@ -439,6 +447,7 @@ export default function DeskResult() {
                                                     <span>점</span>
                                                 </div>
                                             </li>
+                                            <ChkScore />
                                             <li className='ave'>
                                                 <div className='tit'>
                                                     평균
