@@ -160,6 +160,7 @@
 }
 
 .toggle {
+    cursor: pointer;
     width: 49px;
     height: 25px;
     background: #E7E7E7;
@@ -176,6 +177,7 @@
         top: 3px;
         left: 3px;
         border-radius: 50%;
+        transition: 0.2s ease-in-out;
     }
     &:checked {
         background-color: #0275B5;

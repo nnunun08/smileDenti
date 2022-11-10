@@ -16,6 +16,15 @@ export default function DentistChart() {
     const openPop = () => {
         setPop(pop === 'ac'?'':'ac')
     }
+
+    const [mike, setMike] = useState('')
+    const mikeToggle = () => {
+        setMike(mike === 'ac'?'':'ac')
+    }
+    const [mike2, setMike2] = useState('')
+    const mikeToggle2 = () => {
+        setMike2(mike2 === 'ac'?'':'ac')
+    }
     return (
         <>
             <TabletHeader user='김덴컴'/>
@@ -157,7 +166,7 @@ export default function DentistChart() {
                         </div>
                     </div>
                     <div className='resultWrap card'>
-                        <div className='row card2 ac'>
+                        <div className={`row card2 ${mike}`}>
                             <table>
                                 <tr>
                                     <td className='toothLT'>
@@ -230,7 +239,7 @@ export default function DentistChart() {
                                     <button className='btn-tooth btn-tooth04'><i></i>잇몸부종</button>
                                 </div>
                                 <div>
-                                    <MikeToggle name={"Voice On"}/>
+                                    <MikeToggle name={"Voice On"} onClick={mikeToggle}/>
                                 </div>
                             </div>
 
@@ -326,7 +335,7 @@ export default function DentistChart() {
                             </div>
 
                         </div>
-                        <div className='row card2 feedback'>
+                        <div className={`row card2 feedback ${mike2}`}>
                             <div className='top'>
                                 <div className='left'>
                                     <i></i>
@@ -336,7 +345,7 @@ export default function DentistChart() {
                                         <div className='plus'></div>
                                     </span>
                                 </div>
-                                <MikeToggle name={"Smile Dencomm"}/>
+                                <MikeToggle name={"Smile Dencomm"} onClick={mikeToggle2}/>
                             </div>
 
                             <div className='mesgField'>

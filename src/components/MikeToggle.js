@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/components/MikeToggle.css' 
-export default function MikeToggle({name}) {
+export default function MikeToggle({name, onClick}) {
     return (
-        <div className='mikeToggle'>
+        <div className='mikeToggle' onClick={onClick}>
             {name}
             <i>
                 <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">

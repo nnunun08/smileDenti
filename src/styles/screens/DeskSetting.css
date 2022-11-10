@@ -606,6 +606,7 @@
 }
 .DeskSetting .DeskSettingBody .dual .valid .btn-sh34 {
   width: 107px;
+  cursor: pointer;
 }
 .DeskSetting .DeskSettingBody .dual .valid .row {
   margin-top: 12.5px;
@@ -643,6 +644,7 @@
   width: 28px;
   height: 28px;
   background: url(../../../public/img/edit.svg) center/cover no-repeat;
+  z-index: 1;
 }
 .DeskSetting .DeskSettingBody .topCard .tableWrap {
   margin-top: 10px;

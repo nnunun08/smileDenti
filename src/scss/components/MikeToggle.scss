@@ -20,6 +20,8 @@
     color: #FFFFFF;
     position: relative;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
 }
 .mikeToggle i {
     position: absolute;
@@ -33,6 +35,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    transition: 0.2s;
 }
 
 .ac .mikeToggle {
@@ -41,8 +44,7 @@
     padding-right: 45px;
 }
 .ac .mikeToggle i {
-    left: initial;
-    right: 4px;
+    left: calc(100% - 34px);
 }
 .ac .mikeToggle path {
     fill: #FF5100;

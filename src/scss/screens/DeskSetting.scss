@@ -319,6 +319,7 @@
                 }
                 .btn-sh34 {
                     width: 107px;
+                    cursor: pointer;
                 }
                 .row {
                     margin-top: 12.5px;
@@ -355,6 +356,7 @@
                         width: 28px;
                         height: 28px;
                         background: url(../../../public/img/edit.svg) center/cover no-repeat;
+                        z-index: 1;
                     }
                 }
             }

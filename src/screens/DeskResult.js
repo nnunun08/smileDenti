@@ -191,13 +191,13 @@ export default function DeskResult() {
                                                 op='too1'/>
                                             <Tooth 
                                                 toothNum='6'
-                                                op='too2'/>
-                                            <Tooth 
-                                                toothNum='5'
                                                 op='too3'/>
                                             <Tooth 
+                                                toothNum='5'
+                                                op='too2 too4'/>
+                                            <Tooth 
                                                 toothNum='4'
-                                                op='too4'
+                                                op='too1 too4'
                                             />
                                             <Tooth toothNum='3'/>
                                             <Tooth toothNum='2'/>
@@ -223,12 +223,16 @@ export default function DeskResult() {
                                             <Tooth toothNum='8'/>
                                             <Tooth toothNum='7'/>
                                             <Tooth toothNum='6'/>
-                                            <Tooth toothNum='5'/>
-                                            <Tooth toothNum='4'/>
                                             <Tooth 
-                                                toothNum='3'
-                                                op='too4'
+                                                toothNum='5'
+                                                op='too1 too4'
                                             />
+                                            <Tooth 
+                                                toothNum='4'
+                                                op='too2 too4'
+                                            />
+                                            <Tooth toothNum='3'/>
+                                            
                                             <Tooth toothNum='2'/>
                                             <Tooth toothNum='1'/>
                                         </div>

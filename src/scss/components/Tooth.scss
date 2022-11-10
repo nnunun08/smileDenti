@@ -59,9 +59,43 @@
     left: 0;
     right: 0;
 }
-.tooth div {
-    display: none;
+.tooth {
+    div {
+        display: none;
+    }  
+    .too1-img,
+    .too2-img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+} 
+
+.toothLT,
+.toothRT {
+    .too1-img,
+    .too2-img {
+        top: 24px;
+    }
+    .tooth.too1,
+    .tooth.too2 {
+        padding-bottom: 5px;
+    }
 }
+.toothLB,
+.toothRB {
+    .too1-img,
+    .too2-img {
+        bottom: 24px;
+    }
+    .tooth.too1,
+    .tooth.too2 {
+        padding-top: 5px;
+    }
+}
+
+
+
 .tooth.too1 .too1-img,
 .tooth.too2 .too2-img,
 .tooth.too3 .too3-img,

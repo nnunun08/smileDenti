@@ -61,6 +61,38 @@
 .tooth div {
   display: none;
 }
+.tooth .too1-img,
+.tooth .too2-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toothLT .too1-img,
+.toothLT .too2-img,
+.toothRT .too1-img,
+.toothRT .too2-img {
+  top: 24px;
+}
+.toothLT .tooth.too1,
+.toothLT .tooth.too2,
+.toothRT .tooth.too1,
+.toothRT .tooth.too2 {
+  padding-bottom: 5px;
+}
+
+.toothLB .too1-img,
+.toothLB .too2-img,
+.toothRB .too1-img,
+.toothRB .too2-img {
+  bottom: 24px;
+}
+.toothLB .tooth.too1,
+.toothLB .tooth.too2,
+.toothRB .tooth.too1,
+.toothRB .tooth.too2 {
+  padding-top: 5px;
+}
 
 .tooth.too1 .too1-img,
 .tooth.too2 .too2-img,
