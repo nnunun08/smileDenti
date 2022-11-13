@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Btn from '../components/Btn'
 import InputWrap from '../components/InputWrap'
 import CheckBox from '../components/CheckBox'
@@ -6,9 +6,19 @@ import MobileNav from '../components/MobileNav'
 import Radio from '../components/Radio'
 import '../styles/screens/Tablet.css'
 
-export default function Tablet02({count='13'}) {
+export default function Tablet02() {
+    const [topContents,setTopContents] = useState('');
+    const hiddenTopContents = () => {
+        setTopContents('panelOn')
+        window.scrollTo({top:0});
+    }
+    const showTopContents = () => {
+        setTopContents('')
+    }
+
     return(
-        <div className='tablet'>
+        
+        <div className={`tablet ${topContents}`}>
             <MobileNav label={'문진표 작성'} back={'off'} />
             <div className='form mobile'>
                 <div className='row'>
@@ -37,7 +47,7 @@ export default function Tablet02({count='13'}) {
                         <span>{'인증번호'}</span>
                         <div className='flexBx'>
                             <input type='text' className='' placeholder={'-없이 숫자만 입력'}/>
-                            <span class="userResetItem"></span>
+                            <span className="userResetItem"></span>
                             <Btn
                                 label={'확인'}
                                 className={'btn-sh34 '}
@@ -52,7 +62,7 @@ export default function Tablet02({count='13'}) {
                 </div>
                 
                 <div className='group'>
-                    <label class="checkBoxWrap" for="sms">
+                    <label className="checkBoxWrap" htmlFor="sms">
                         <CheckBox
                             id='sms'
                             type=''
@@ -62,7 +72,7 @@ export default function Tablet02({count='13'}) {
                     <div className='formBx'><input type='tel' /></div>
                 </div>
                 <div className='group'>
-                    <label class="checkBoxWrap" for="email">
+                    <label className="checkBoxWrap" htmlFor="email">
                         <CheckBox
                             id='email'
                             type=''
@@ -81,7 +91,7 @@ export default function Tablet02({count='13'}) {
 
             <div className='mobileCon mobile4'>
                 <div className='fixedTop'>
-                    <div className='fixedTopArrow'></div>
+                    <div className='fixedTopArrow' onClick={showTopContents}></div>
                     <div className="top">
                         <div className='tit'>
                             (치과)병력과 구강건강인식도 관련 문항
@@ -92,13 +102,13 @@ export default function Tablet02({count='13'}) {
                         <div className='progress'>
                             <div className='progressBar'>
                                 <div className='fill' style={{width:'10%'}}>
-                                    <div className='badge'>{count}문항 남음</div>
+                                    <div className='badge'>{'##'}문항 남음</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                {/* <button style={{position:'fixed', left:'0', top:'0', zIndex:'100', width:'100px',height:'100px'}} onClick={panelOn}>버튼</button> */}
                 <div className="mobileInner">
                     <div className='quesItem'>
                         <div className='title'>
@@ -106,7 +116,7 @@ export default function Tablet02({count='13'}) {
                             <div className='question'>최근 1년간 구강병 치료나 관리를 목적으로 치과 병(의)원에 가신 적이 있습니까?</div>
                         </div>
 
-                        <div className='answer'>
+                        <div className='answer' onClick={hiddenTopContents}>
                             <Radio
                                 id={'id01-1'}
                                 name={'q01'}

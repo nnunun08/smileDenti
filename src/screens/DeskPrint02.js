@@ -31,11 +31,11 @@ export default function DeskPrint02() {
                         <td>{'980225-2333333'}</td>
                         <th>검진장소</th>
                         <td>
-                            <label className='checkBoxWrap' for="post">
+                            <label className='checkBoxWrap' htmlFor="post">
                                 <CheckBox id='post' type='small'/>
                                 내원
                             </label>
-                            <label className='checkBoxWrap' for="email">
+                            <label className='checkBoxWrap' htmlFor="email">
                                 <CheckBox id='email' type='small' />
                                 출장
                             </label>

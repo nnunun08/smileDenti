@@ -32,10 +32,10 @@ export default function DeskBillList() {
                                             <input type='date' className='inputDate' />
                                             <span style={{margin:'0 5px'}}>~</span>
                                             <input type='date' className='inputDate' style={{marginRight:'12px'}}/>
-                                            <input id="d01" name="date" type='radio' defaultChecked/><label for="d01">오늘</label>
-                                            <input id="d02" name="date" type='radio'/><label for="d02">지난1주</label>
-                                            <input id="d03" name="date" type='radio'/><label for="d03">이번달</label>
-                                            <input id="d04" name="date" type='radio'/><label for="d04">올해</label>
+                                            <input id="d01" name="date" type='radio' defaultChecked/><label htmlFor="d01">오늘</label>
+                                            <input id="d02" name="date" type='radio'/><label htmlFor="d02">지난1주</label>
+                                            <input id="d03" name="date" type='radio'/><label htmlFor="d03">이번달</label>
+                                            <input id="d04" name="date" type='radio'/><label htmlFor="d04">올해</label>
                                         </div>
                                     </div>
                                     <div className='tr'>
@@ -135,7 +135,7 @@ export default function DeskBillList() {
                             <thead>
                                 <tr>
                                     <th>
-                                        <label className='checkBoxWrap' for="check">
+                                        <label className='checkBoxWrap' htmlFor="check">
                                             <CheckBox id='check' />
                                         </label>
                                     </th>
@@ -171,7 +171,7 @@ export default function DeskBillList() {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -188,7 +188,7 @@ export default function DeskBillList() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -205,7 +205,7 @@ export default function DeskBillList() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>

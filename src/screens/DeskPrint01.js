@@ -43,11 +43,11 @@ export default function DeskPrint01() {
                     <tr>
                         <th style={{textAlign:'center',background:'#fff'}}>건강검진 결과통보서 수령방법</th>
                         <td colSpan={3}>
-                            <label className='checkBoxWrap' for="post">
+                            <label className='checkBoxWrap' htmlFor="post">
                                 <CheckBox id='post' type='small'/>
                                 우편
                             </label>
-                            <label className='checkBoxWrap' for="email">
+                            <label className='checkBoxWrap' htmlFor="email">
                                 <CheckBox id='email' type='small' />
                                 E-mail
                             </label>

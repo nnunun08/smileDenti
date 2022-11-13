@@ -29,7 +29,7 @@ export default function Login() {
                     />
                 </div>
                 <div className='row'>
-                    <label className='checkBoxWrap' for="check">
+                    <label className='checkBoxWrap'htmlFor="check">
                         <CheckBox id='check' />
                         아이디 저장
                     </label>

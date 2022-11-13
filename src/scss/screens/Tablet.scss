@@ -47,6 +47,11 @@
     color: #222222;
     max-width: 360px;
     margin: 0 auto;
+    transition: 0.3s ease-in-out;
+    .mobileNav,
+    .form {
+        transition: 1s;
+    }
     .mobileNav {
         padding-top: 68px !important;
         margin-bottom: 53px;
@@ -76,8 +81,15 @@
     .mobile4 {
         padding-top: 42px !important;
         padding-bottom: 0;
+        .mobileInner .quesItem {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         .top {
             position: static;
+            max-width: 320px;
+            margin: 0 auto;
+            width: 100%;
         }
         & + .submitBtn {
             margin: 0 auto;
@@ -87,19 +99,53 @@
         }
         .fixedTop {
             background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .fixedTopArrow {
-            width: 24px;
-            height: 24px;
+            // width: 24px;
+            // height: 24px;
+            // width: 360px;
+            width: 90px;
+            height: 90px;
+            margin: 0;
             background: url(../../../public/img/arrow-left.svg) center no-repeat;
             transform: rotate(-90deg);
-            margin-top: 38px;
-            margin-bottom: 28px;
-            margin-left: auto;
-            margin-right: auto;
-            display: none;
+            // margin-top: 38px;
+            // margin-bottom: 28px;
+            // margin-left: auto;
+            // margin-right: auto;
+            opacity: 0;
+            height: 0;
         }
     }    
+
+    &.panelOn {
+        margin-top: -777px;
+        // .mobileNav,
+        // .form.mobile {
+        //     opacity: 0;
+        //     height: 0;
+        // }
+        .fixedTop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .mobile4 {
+            padding-top: 200px !important;
+            .fixedTopArrow {
+                opacity: 1;
+                height: 90px;
+            }
+        }
+        
+    }
+
+
     .mobileFinish h1 {
         font-size: 32px;
         margin-bottom: 7px;

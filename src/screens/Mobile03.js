@@ -36,7 +36,7 @@ export default function Mobile03() {
                         </div>
                         
                         <div className='group'>
-                            <label class="checkBoxWrap" for="sms">
+                            <label class="checkBoxWrap" htmlFor="sms">
                                 <CheckBox
                                     id='sms'
                                     type=''
@@ -46,7 +46,7 @@ export default function Mobile03() {
                             <div className='formBx'><input type='tel' /></div>
                         </div>
                         <div className='group'>
-                            <label class="checkBoxWrap" for="email">
+                            <label class="checkBoxWrap" htmlFor="email">
                                 <CheckBox
                                     id='email'
                                     type=''

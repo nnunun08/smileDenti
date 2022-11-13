@@ -115,7 +115,7 @@ export default function DeskApplications() {
                             <thead>
                                 <tr>
                                     <th>
-                                        <label className='checkBoxWrap' for="check">
+                                        <label className='checkBoxWrap' htmlFor="check">
                                             <CheckBox id='check' />
                                         </label>
                                     </th>
@@ -153,7 +153,7 @@ export default function DeskApplications() {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -184,7 +184,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -215,7 +215,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -246,7 +246,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -277,7 +277,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -308,7 +308,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -339,7 +339,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -370,7 +370,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -401,7 +401,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -432,7 +432,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -463,7 +463,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -485,7 +485,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr className='red'>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -507,7 +507,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -538,7 +538,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -569,7 +569,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -600,7 +600,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -631,7 +631,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -662,7 +662,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
@@ -693,7 +693,7 @@ export default function DeskApplications() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label className='checkBoxWrap' for="check01">
+                                        <label className='checkBoxWrap' htmlFor="check01">
                                             <CheckBox id="check01" />
                                         </label>
                                     </td>
